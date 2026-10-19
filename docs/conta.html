@@ -20,6 +20,7 @@
 
 <main class="wrap">
   <div class="box" id="app"><p><span class="spin"></span>Carregando…</p></div>
+  <p class="small" style="text-align:center;margin-bottom:40px">Dúvidas? <a href="https://wa.me/5548988516188" target="_blank" rel="noopener">WhatsApp (48) 98851-6188</a> · <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a></p>
 </main>
 
 <script>
@@ -29,6 +30,8 @@ const q = new URLSearchParams(location.search);
 let PUB = {}, ID = "", ME = null;
 const store = { get(){ try { return sessionStorage.getItem("pf_id") || ""; } catch { return ""; } }, set(v){ try { v ? sessionStorage.setItem("pf_id", v) : sessionStorage.removeItem("pf_id"); } catch {} } };
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const WA = "https://wa.me/5548988516188";
+const waLink = email => WA + "?text=" + encodeURIComponent("Olá! Quero comprar o PortFlix PRO (R$ 30, vitalício) pagando com Pix. Meu e-mail do PortFlix é: " + (email || ""));
 const brl = n => Number(n).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
 async function api(path, opt = {}) {
@@ -54,7 +57,7 @@ function login() {
     <div class="msg" style="border-color:var(--acc)"><b>⚠️ Atenção ao e-mail</b><br>Entre com o <b>mesmo e-mail</b> que você vai usar no aplicativo PortFlix. A chave do PRO fica presa a esse e-mail: na hora de ativar, o app só aceita se você entrar com ele.</div>
     <div id="gbtn" style="margin:22px 0"></div>
     <p class="small">Só usamos o seu nome e e-mail. <a href="${API}/privacidade">Privacidade</a></p>`);
-  if (!PUB.webClientId) { $("#gbtn").innerHTML = `<div class="msg">O login pelo site está sendo ligado. Enquanto isso, compre falando com <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</div>`; return; }
+  if (!PUB.webClientId) { $("#gbtn").innerHTML = `<div class="msg">O login pelo site está sendo ligado. Enquanto isso, compre pelo <a href="${WA}" target="_blank" rel="noopener">WhatsApp (48) 98851-6188</a> ou pelo e-mail <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</div>`; return; }
   const go = () => {
     if (!window.google?.accounts?.id) return setTimeout(go, 150);
     google.accounts.id.initialize({ client_id: PUB.webClientId, callback: onGoogle, ux_mode: "popup" });
@@ -98,10 +101,10 @@ function logged() {
       <h3>PortFlix PRO</h3><div class="price">${brl(ME.price || PUB.price || 30)} <small>pagamento único</small></div>
       <div class="small">Vitalício · até ${PUB.devices || 2} PCs · Pix, cartão ou boleto</div>
       <div class="msg" style="border-color:var(--acc)">A chave será criada para o e-mail <b>${esc(w.email)}</b>. No aplicativo, entre com <b>esse mesmo e-mail</b> para ativar. Se for usar outro, clique em <b>Sair</b> e entre com ele antes de comprar.</div>
-      <p style="margin:18px 0 0"><button class="btn pri" id="buy" ${ME.buyOnline ? "" : "disabled"}>${active ? "Comprar outra chave" : "Comprar agora"}</button></p>
-      ${ME.buyOnline ? "" : `<p class="small">A compra pelo site está sendo ligada. Enquanto isso, fale com <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</p>`}
+      <div class="cta" style="justify-content:flex-start;margin-top:18px">${ME.buyOnline ? `<button class="btn pri" id="buy">${active ? "Comprar outra chave" : "Comprar agora"}</button>` : ""}<a class="btn wa" href="${waLink(w.email)}" target="_blank" rel="noopener">💬 Pix pelo WhatsApp</a></div>
+      <p class="small">${ME.buyOnline ? "<b>Comprar agora:</b> Mercado Pago (Pix, cartão ou boleto), a chave aparece aqui na hora.<br>" : ""}<b>Pix pelo WhatsApp:</b> você recebe a chave Pix, manda o comprovante e a sua chave do PRO aparece aqui nesta página.</p>
     </div>`);
-  $("#buy").onclick = buy;
+  if ($("#buy")) $("#buy").onclick = buy;
   if (q.get("pedido")) watchOrder(q.get("pedido"));
 }
 

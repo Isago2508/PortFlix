@@ -57,3 +57,4 @@ ol.steps li{margin:6px 0;color:#cfd6db}
 .spin{display:inline-block;width:16px;height:16px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:s 1s linear infinite;vertical-align:-3px;margin-right:8px}
 @keyframes s{to{transform:rotate(360deg)}}
 @media (max-width:720px){nav.links a.hide{display:none}.gal{grid-template-columns:1fr}.hero{padding-top:48px}}
+.btn.wa{background:#1fa855;border:0;color:#fff}.btn.wa:hover{background:#21b95c}
