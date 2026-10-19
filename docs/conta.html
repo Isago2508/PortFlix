@@ -50,7 +50,8 @@ async function start() {
 function login() {
   $("#sair").hidden = true;
   view(`<h1>Minha conta</h1>
-    <p class="small">Entre com a conta Google para comprar o PRO e ver as suas chaves. Use a mesma conta que você vai usar no PortFlix.</p>
+    <p class="small">Entre com o Google para comprar o PRO e ver as suas chaves.</p>
+    <div class="msg" style="border-color:var(--acc)"><b>⚠️ Atenção ao e-mail</b><br>Entre com o <b>mesmo e-mail</b> que você vai usar no aplicativo PortFlix. A chave do PRO fica presa a esse e-mail: na hora de ativar, o app só aceita se você entrar com ele.</div>
     <div id="gbtn" style="margin:22px 0"></div>
     <p class="small">Só usamos o seu nome e e-mail. <a href="${API}/privacidade">Privacidade</a></p>`);
   if (!PUB.webClientId) { $("#gbtn").innerHTML = `<div class="msg">O login pelo site está sendo ligado. Enquanto isso, compre falando com <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</div>`; return; }
@@ -96,6 +97,7 @@ function logged() {
     <div class="plan pro" style="margin-top:26px">
       <h3>PortFlix PRO</h3><div class="price">${brl(ME.price || PUB.price || 30)} <small>pagamento único</small></div>
       <div class="small">Vitalício · até ${PUB.devices || 2} PCs · Pix, cartão ou boleto</div>
+      <div class="msg" style="border-color:var(--acc)">A chave será criada para o e-mail <b>${esc(w.email)}</b>. No aplicativo, entre com <b>esse mesmo e-mail</b> para ativar. Se for usar outro, clique em <b>Sair</b> e entre com ele antes de comprar.</div>
       <p style="margin:18px 0 0"><button class="btn pri" id="buy" ${ME.buyOnline ? "" : "disabled"}>${active ? "Comprar outra chave" : "Comprar agora"}</button></p>
       ${ME.buyOnline ? "" : `<p class="small">A compra pelo site está sendo ligada. Enquanto isso, fale com <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</p>`}
     </div>`);
