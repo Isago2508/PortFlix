@@ -9,7 +9,7 @@
 <link rel="icon" href="icone.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 <script src="https://accounts.google.com/gsi/client" async></script>
 </head>
 <body>
@@ -100,7 +100,7 @@ function logged() {
     ${active ? HOW : ""}
     <div class="plan pro" style="margin-top:26px">
       <h3>PortFlix PRO vitalício</h3><div class="small">Pagamento único · Pix, cartão ou boleto</div>
-      <div class="plans2">${PLANS().map((p, i) => `<label class="opt"><input type="radio" name="pcs" value="${p.pcs}" ${i === 0 ? "checked" : ""}><span><b>${p.pcs} ${p.pcs > 1 ? "PCs" : "PC"}</b><em>${brl(p.price)}</em></span></label>`).join("")}</div>
+      <div class="plans2">${PLANS().map((p, i) => `<label class="opt"><input type="radio" name="pcs" value="${p.pcs}" ${Number(q.get("pcs") || 1) === p.pcs ? "checked" : ""}><span><b>${p.pcs} ${p.pcs > 1 ? "PCs" : "PC"}</b><em>${brl(p.price)}</em></span></label>`).join("")}</div>
       <div class="msg" style="border-color:var(--acc)">A chave será criada para o e-mail <b>${esc(w.email)}</b>. No aplicativo, entre com <b>esse mesmo e-mail</b> para ativar. Se for usar outro, clique em <b>Sair</b> e entre com ele antes de comprar.</div>
       <div class="cta" style="justify-content:flex-start;margin-top:18px">${ME.buyOnline ? `<button class="btn pri" id="buy">${active ? "Comprar outra chave" : "Comprar agora"}</button>` : ""}<a class="btn wa" href="${waLink(w.email)}" target="_blank" rel="noopener">💬 Pix pelo WhatsApp</a></div>
       <p class="small">${ME.buyOnline ? "<b>Comprar agora:</b> Mercado Pago (Pix, cartão ou boleto), a chave aparece aqui na hora.<br>" : ""}<b>Pix pelo WhatsApp:</b> você recebe a chave Pix, manda o comprovante e a sua chave do PRO aparece aqui nesta página.</p>
