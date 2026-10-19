@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minha conta · PortFlix</title>
+<meta name="description" content="Entre com o Google para comprar o PortFlix PRO e ver as suas chaves.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://accounts.google.com/gsi/client" async></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><img src="icone.png" alt=""><span>PORT<b>FLIX</b></span></a>
+  <nav class="links"><a href="./">Início</a><a href="./#precos">Preços</a><a id="sair" href="#" hidden>Sair</a></nav>
+</div></header>
+
+<main class="wrap">
+  <div class="box" id="app"><p><span class="spin"></span>Carregando…</p></div>
+</main>
+
+<script>
+const API = "https://portsradar-licencas.portsradar-hugo.workers.dev";
+const $ = s => document.querySelector(s);
+const q = new URLSearchParams(location.search);
+let PUB = {}, ID = "", ME = null;
+const store = { get(){ try { return sessionStorage.getItem("pf_id") || ""; } catch { return ""; } }, set(v){ try { v ? sessionStorage.setItem("pf_id", v) : sessionStorage.removeItem("pf_id"); } catch {} } };
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const brl = n => Number(n).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
+async function api(path, opt = {}) {
+  const r = await fetch(API + path, { ...opt, headers: { "content-type": "application/json", ...(ID ? { authorization: "Bearer " + ID } : {}) } });
+  const j = await r.json().catch(() => ({}));
+  if (r.status === 401) { ID = ""; store.set(""); }
+  if (!r.ok) throw new Error(j.message || "Erro " + r.status);
+  return j;
+}
+function view(html) { $("#app").innerHTML = html; }
+
+async function start() {
+  try { PUB = await api("/v1/public"); } catch { view(`<h1>Minha conta</h1><div class="msg bad">Não foi possível falar com o servidor. Tente de novo em instantes.</div>`); return; }
+  ID = store.get();
+  if (ID) { try { ME = await api("/v1/web/me"); } catch { ME = null; } }
+  ME ? logged() : login();
+}
+
+function login() {
+  $("#sair").hidden = true;
+  view(`<h1>Minha conta</h1>
+    <p class="small">Entre com a conta Google para comprar o PRO e ver as suas chaves. Use a mesma conta que você vai usar no PortFlix.</p>
+    <div id="gbtn" style="margin:22px 0"></div>
+    <p class="small">Só usamos o seu nome e e-mail. <a href="${API}/privacidade">Privacidade</a></p>`);
+  if (!PUB.webClientId) { $("#gbtn").innerHTML = `<div class="msg">O login pelo site está sendo ligado. Enquanto isso, compre falando com <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</div>`; return; }
+  const go = () => {
+    if (!window.google?.accounts?.id) return setTimeout(go, 150);
+    google.accounts.id.initialize({ client_id: PUB.webClientId, callback: onGoogle, ux_mode: "popup" });
+    google.accounts.id.renderButton($("#gbtn"), { theme: "filled_black", size: "large", shape: "pill", text: "signin_with", locale: "pt-BR" });
+  };
+  go();
+}
+
+async function onGoogle(res) {
+  try {
+    const j = await api("/v1/web/google", { method: "POST", body: JSON.stringify({ credential: res.credential }) });
+    ID = j.identity; store.set(ID);
+    ME = await api("/v1/web/me");
+    logged();
+  } catch (e) { alert(e.message); }
+}
+
+function keyHtml(k) {
+  const st = k.status === "active" ? (k.activated ? `ativa · ${k.devices}/${k.maxDevices} PCs` : "pronta para ativar") : k.status === "revoked" ? "cancelada" : "vencida";
+  return `<div class="keyrow"><code>${esc(k.key)}</code><button class="btn sm" onclick="copy('${esc(k.key)}',this)">Copiar</button><span class="st">${k.lifetime ? "Vitalícia · " : ""}${st}</span></div>`;
+}
+window.copy = (t, b) => { navigator.clipboard?.writeText(t).then(() => { b.textContent = "Copiado!"; setTimeout(() => b.textContent = "Copiar", 1500); }); };
+
+const HOW = `<h3 style="margin-top:26px">Como ativar</h3><ol class="steps">
+  <li>Baixe e abra o PortFlix (<a href="./#baixar">download</a>).</li>
+  <li>Clique em <b>Ativar PRO</b>, no canto de cima.</li>
+  <li>Entre com <b>esta mesma conta Google</b>.</li>
+  <li>Cole a chave e clique em <b>Ativar</b>.</li></ol>`;
+
+function logged() {
+  $("#sair").hidden = false;
+  const w = ME.who, ks = ME.keys || [];
+  const active = ks.some(k => k.status === "active");
+  view(`<h1>Minha conta</h1>
+    <div class="who">${w.pic ? `<img src="${esc(w.pic)}" alt="" referrerpolicy="no-referrer">` : ""}<div><b>${esc(w.name || w.email)}</b><div class="small" style="margin:0">${esc(w.email)}</div></div></div>
+    <div id="pedido"></div>
+    <h3>Suas chaves</h3>
+    ${ks.length ? ks.map(keyHtml).join("") : `<p class="small">Você ainda não tem chaves do PRO.</p>`}
+    ${active ? HOW : ""}
+    <div class="plan pro" style="margin-top:26px">
+      <h3>PortFlix PRO</h3><div class="price">${brl(ME.price || PUB.price || 30)} <small>pagamento único</small></div>
+      <div class="small">Vitalício · até ${PUB.devices || 2} PCs · Pix, cartão ou boleto</div>
+      <p style="margin:18px 0 0"><button class="btn pri" id="buy" ${ME.buyOnline ? "" : "disabled"}>${active ? "Comprar outra chave" : "Comprar agora"}</button></p>
+      ${ME.buyOnline ? "" : `<p class="small">A compra pelo site está sendo ligada. Enquanto isso, fale com <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</p>`}
+    </div>`);
+  $("#buy").onclick = buy;
+  if (q.get("pedido")) watchOrder(q.get("pedido"));
+  else if (q.get("comprar") && !active && ME.buyOnline) buy();
+}
+
+async function buy() {
+  const b = $("#buy"); b.disabled = true; b.innerHTML = `<span class="spin"></span>Abrindo o Mercado Pago…`;
+  try { const j = await api("/v1/web/checkout", { method: "POST", body: "{}" }); location.href = j.url; }
+  catch (e) { b.disabled = false; b.textContent = "Comprar agora"; alert(e.message); }
+}
+
+async function watchOrder(id) {
+  const box = $("#pedido");
+  for (let i = 0; i < 60; i++) {
+    let o;
+    try { o = await api("/v1/web/order?id=" + encodeURIComponent(id)); } catch (e) { box.innerHTML = `<div class="msg bad">${esc(e.message)}</div>`; return; }
+    if (o.key) {
+      history.replaceState(null, "", "conta.html");
+      ME = await api("/v1/web/me"); logged();
+      $("#pedido").innerHTML = `<div class="msg ok"><b>Pagamento aprovado! 🎉</b> Sua chave já está abaixo.</div>`;
+      return;
+    }
+    if (["rejected", "cancelled", "valor_errado"].includes(o.status)) { box.innerHTML = `<div class="msg bad">O pagamento não foi aprovado. Você pode tentar de novo.</div>`; return; }
+    box.innerHTML = `<div class="msg"><span class="spin"></span>${o.status === "pending" || o.status === "in_process" ? "Aguardando a confirmação do pagamento. No Pix e no cartão é rapidinho; no boleto pode levar até 3 dias úteis." : "Confirmando o pagamento…"}</div>`;
+    await new Promise(r => setTimeout(r, i < 20 ? 3000 : 10000));
+  }
+}
+
+$("#sair").onclick = e => { e.preventDefault(); store.set(""); ID = ""; ME = null; try { google.accounts.id.disableAutoSelect(); } catch {} login(); };
+start();
+</script>
+</body>
+</html>

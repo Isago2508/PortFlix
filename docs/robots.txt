@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://isago2508.github.io/PortFlix/sitemap.xml
