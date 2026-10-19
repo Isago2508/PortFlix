@@ -15,7 +15,7 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="logo" href="./"><img src="icone.png" alt=""><span>PORT<b>FLIX</b></span></a>
-  <nav class="links"><a href="./">Início</a><a href="./#precos">Preços</a><a id="sair" href="#" hidden>Sair</a></nav>
+  <nav class="links"><a href="./">Página inicial</a><a href="./#precos">Preços</a><a id="sair" href="#" hidden>Sair</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -101,7 +101,6 @@ function logged() {
     </div>`);
   $("#buy").onclick = buy;
   if (q.get("pedido")) watchOrder(q.get("pedido"));
-  else if (q.get("comprar") && !active && ME.buyOnline) buy();
 }
 
 async function buy() {
