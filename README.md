@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Windows%20%7C%20Linux-4a4f57?style=for-the-badge" alt="Windows e Linux">
 </p>
 
-<p align="center"><b><a href="https://isago2508.github.io/PortFlix/">🌐 Site oficial</a> · <a href="https://isago2508.github.io/PortFlix/conta.html">Comprar o PRO (R$ 30, vitalício)</a></b></p>
+<p align="center"><b><a href="https://isago2508.github.io/PortFlix/">🌐 Site oficial</a> · <a href="https://isago2508.github.io/PortFlix/conta.html">Comprar o PRO vitalício (1 PC R$ 30 · 2 PCs R$ 50)</a></b></p>
 
 <p align="center">
   <a href="https://github.com/Isago2508/PortFlix/releases/latest/download/PortFlix-Setup.exe"><img src="https://img.shields.io/badge/Baixar%20para%20Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Baixar para Windows"></a>

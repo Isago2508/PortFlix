@@ -31,7 +31,8 @@ let PUB = {}, ID = "", ME = null;
 const store = { get(){ try { return sessionStorage.getItem("pf_id") || ""; } catch { return ""; } }, set(v){ try { v ? sessionStorage.setItem("pf_id", v) : sessionStorage.removeItem("pf_id"); } catch {} } };
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const WA = "https://wa.me/5548988516188";
-const waLink = email => WA + "?text=" + encodeURIComponent("Olá! Quero comprar o PortFlix PRO (R$ 30, vitalício) pagando com Pix. Meu e-mail do PortFlix é: " + (email || ""));
+const waLink = email => WA + "?text=" + encodeURIComponent("Olá! Quero comprar o PortFlix PRO vitalício pagando com Pix. Plano: (1 PC R$ 30 / 2 PCs R$ 50). Meu e-mail do PortFlix é: " + (email || ""));
+const PLANS = () => (ME && ME.plans) || PUB.plans || [{ pcs: 1, price: 30 }, { pcs: 2, price: 50 }];
 const brl = n => Number(n).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
 async function api(path, opt = {}) {
@@ -98,8 +99,8 @@ function logged() {
     ${ks.length ? ks.map(keyHtml).join("") : `<p class="small">Você ainda não tem chaves do PRO.</p>`}
     ${active ? HOW : ""}
     <div class="plan pro" style="margin-top:26px">
-      <h3>PortFlix PRO</h3><div class="price">${brl(ME.price || PUB.price || 30)} <small>pagamento único</small></div>
-      <div class="small">Vitalício · até ${PUB.devices || 2} PCs · Pix, cartão ou boleto</div>
+      <h3>PortFlix PRO vitalício</h3><div class="small">Pagamento único · Pix, cartão ou boleto</div>
+      <div class="plans2">${PLANS().map((p, i) => `<label class="opt"><input type="radio" name="pcs" value="${p.pcs}" ${i === 0 ? "checked" : ""}><span><b>${p.pcs} ${p.pcs > 1 ? "PCs" : "PC"}</b><em>${brl(p.price)}</em></span></label>`).join("")}</div>
       <div class="msg" style="border-color:var(--acc)">A chave será criada para o e-mail <b>${esc(w.email)}</b>. No aplicativo, entre com <b>esse mesmo e-mail</b> para ativar. Se for usar outro, clique em <b>Sair</b> e entre com ele antes de comprar.</div>
       <div class="cta" style="justify-content:flex-start;margin-top:18px">${ME.buyOnline ? `<button class="btn pri" id="buy">${active ? "Comprar outra chave" : "Comprar agora"}</button>` : ""}<a class="btn wa" href="${waLink(w.email)}" target="_blank" rel="noopener">💬 Pix pelo WhatsApp</a></div>
       <p class="small">${ME.buyOnline ? "<b>Comprar agora:</b> Mercado Pago (Pix, cartão ou boleto), a chave aparece aqui na hora.<br>" : ""}<b>Pix pelo WhatsApp:</b> você recebe a chave Pix, manda o comprovante e a sua chave do PRO aparece aqui nesta página.</p>
@@ -110,7 +111,8 @@ function logged() {
 
 async function buy() {
   const b = $("#buy"); b.disabled = true; b.innerHTML = `<span class="spin"></span>Abrindo o Mercado Pago…`;
-  try { const j = await api("/v1/web/checkout", { method: "POST", body: "{}" }); location.href = j.url; }
+  const pcs = Number(document.querySelector('input[name=pcs]:checked')?.value || 1);
+  try { const j = await api("/v1/web/checkout", { method: "POST", body: JSON.stringify({ pcs }) }); location.href = j.url; }
   catch (e) { b.disabled = false; b.textContent = "Comprar agora"; alert(e.message); }
 }
 

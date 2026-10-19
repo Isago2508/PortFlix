@@ -58,3 +58,7 @@ ol.steps li{margin:6px 0;color:#cfd6db}
 @keyframes s{to{transform:rotate(360deg)}}
 @media (max-width:720px){nav.links a.hide{display:none}.gal{grid-template-columns:1fr}.hero{padding-top:48px}}
 .btn.wa{background:#1fa855;border:0;color:#fff}.btn.wa:hover{background:#21b95c}
+.plans2{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 4px}
+.opt{flex:1;min-width:150px;cursor:pointer}.opt input{position:absolute;opacity:0}
+.opt span{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg2)}
+.opt em{font-style:normal;font-size:26px;font-weight:800}.opt input:checked+span{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset}
