@@ -27,6 +27,7 @@
 - Aviso de versão nova do PortFlix no sino, na bandeja e no botão "⬆ Atualizar".
 - Configurações agora abrem direto na aba Geral (antes podia abrir em branco).
 - Linux: o PortFlix e o PortFlix DEV agora abrem ao mesmo tempo, cada um na sua janela e com a sua conta.
+- Linux: instalador gráfico igual ao do Windows (pasta, atalhos no menu e na área de trabalho, atualizar ou desinstalar). Ao atualizar, ele fecha o PortFlix aberto para não continuar rodando a versão antiga.
 - Tela de ativação com o botão para comprar o PRO (1 PC R$ 30 · 2 PCs R$ 50).
 
 ### 1.1.0 (19/10/2026)
@@ -67,6 +68,7 @@
 - Settings now open on the General tab (they could open blank before).
 - Activation screen with a button to buy PRO (1 PC R$ 30 · 2 PCs R$ 50).
 - Linux: PortFlix and PortFlix DEV now open at the same time, each in its own window and with its own account.
+- Linux: graphical installer like the Windows one (folder, app menu and desktop shortcuts, update or uninstall). When updating, it closes the running PortFlix so the old version doesn't keep running.
 
 ### 1.1.0 (2026-10-19)
 - Light, dark or automatic theme; red, pink, purple, blue and neon colors (PRO).

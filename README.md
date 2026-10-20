@@ -120,7 +120,8 @@ O PortFlix entra no menu de aplicativos, em **Jogos**. Ele abre numa janela pró
 
 - **Jogos que só têm versão para Windows:** o app abre pelo **Wine**, se ele estiver instalado. Outra opção é adicionar o jogo ao Steam como "jogo não Steam" e ativar o Proton.
 - **Programas opcionais:** `zenity` ou `kdialog` (janela para escolher pastas), `wl-clipboard` ou `xclip` (copiar texto).
-- **Desinstalar:** `~/.local/share/PortFlix/portflix --desinstalar`
+- **Instalador:** dois cliques no `instalar.sh` abrem o mesmo instalador do Windows (pasta, atalhos, atualizar ou desinstalar).
+- **Desinstalar:** botão direito no PortFlix no menu de aplicativos → **Desinstalar o PortFlix**, ou rode o `instalar.sh` de novo.
 
 ### Ativar o PRO
 
@@ -268,7 +269,8 @@ PortFlix shows up in your app menu under **Games**. It opens in its own window u
 
 - **Windows-only games:** the app opens them with **Wine**, if installed. You can also add the game to Steam as a "non-Steam game" and enable Proton.
 - **Optional tools:** `zenity` or `kdialog` (folder picker), `wl-clipboard` or `xclip` (copy text).
-- **Uninstall:** `~/.local/share/PortFlix/portflix --desinstalar`
+- **Installer:** double-click `instalar.sh` to open the same installer as on Windows (folder, shortcuts, update or uninstall).
+- **Uninstall:** right-click PortFlix in the app menu → **Desinstalar o PortFlix**, or run `instalar.sh` again.
 
 ### Activating PRO
 
