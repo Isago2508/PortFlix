@@ -17,8 +17,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Isago2508/PortFlix/releases/latest/download/PortFlix-Setup.exe"><img src="https://img.shields.io/badge/Windows-Baixar%20%2F%20Download-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></a>
-  <a href="https://github.com/Isago2508/PortFlix/releases/latest/download/PortFlix-Linux-x86_64.tar.gz"><img src="https://img.shields.io/badge/Linux-Baixar%20%2F%20Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></a>
+  <a href="https://github.com/Isago2508/PortFlix/releases/latest"><img src="https://img.shields.io/badge/Windows-Baixar%20%2F%20Download-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></a>
+  <a href="https://github.com/Isago2508/PortFlix/releases/latest"><img src="https://img.shields.io/badge/Linux-Baixar%20%2F%20Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></a>
 </p>
 
 <p align="center"><b><a href="https://isago2508.github.io/PortFlix/">🌐 Site / Website</a> · <a href="https://isago2508.github.io/PortFlix/conta.html">PRO vitalício / lifetime: 1 PC R$ 30 · 2 PCs R$ 50</a></b></p>
@@ -96,14 +96,14 @@ Baixe em **[Releases](https://github.com/Isago2508/PortFlix/releases/latest)**:
 
 | Sistema | Arquivo |
 |---|---|
-| Windows 10 / 11 | `PortFlix-Setup.exe` |
-| Linux (x86_64: a maioria dos PCs e o Steam Deck) | `PortFlix-Linux-x86_64.tar.gz` |
-| Linux ARM64 (Raspberry Pi e similares) | `PortFlix-Linux-arm64.tar.gz` |
-| Android 8+ (celular e tablet, 64 bits) | `PortFlix-Android.apk` |
+| Windows 10 / 11 | `PortFlix-<versão>-Setup.exe` |
+| Linux (x86_64: a maioria dos PCs e o Steam Deck) | `PortFlix-<versão>-Linux-x86_64.tar.gz` |
+| Linux ARM64 (Raspberry Pi e similares) | `PortFlix-<versão>-Linux-arm64.tar.gz` |
+| Android 8+ (celular e tablet, 64 bits) | `PortFlix-<versão>-Android.apk` |
 
 #### Windows
 
-1. Abra o `PortFlix-Setup.exe`.
+1. Abra o `PortFlix-<versão>-Setup.exe`.
 2. Se aparecer **"O Windows protegeu o computador"**, clique em **Mais informações → Executar assim mesmo**. O aviso aparece porque o PortFlix é um programa novo e ainda não tem assinatura digital. Não é vírus.
 3. Leia e aceite os termos, escolha a pasta (o padrão é `C:\PortFlix`) e pronto.
 
@@ -114,7 +114,7 @@ Para desinstalar, use **Configurações do Windows → Aplicativos → PortFlix*
 #### Linux
 
 ```bash
-tar -xzf PortFlix-Linux-x86_64.tar.gz
+tar -xzf PortFlix-*-Linux-x86_64.tar.gz
 cd PortFlix
 ./instalar.sh
 ```
@@ -128,7 +128,7 @@ O PortFlix entra no menu de aplicativos, em **Jogos**. Ele abre numa janela pró
 
 #### Android
 
-1. Baixe o `PortFlix-Android.apk` no celular e toque nele.
+1. Baixe o `PortFlix-<versão>-Android.apk` no celular e toque nele.
 2. Se o Android pedir, libere **"instalar apps desconhecidos"** para o navegador ou o gerenciador de arquivos.
 3. Abra o PortFlix.
 
@@ -256,14 +256,14 @@ Get it from **[Releases](https://github.com/Isago2508/PortFlix/releases/latest)*
 
 | System | File |
 |---|---|
-| Windows 10 / 11 | `PortFlix-Setup.exe` |
-| Linux (x86_64: most PCs and the Steam Deck) | `PortFlix-Linux-x86_64.tar.gz` |
-| Linux ARM64 (Raspberry Pi and similar) | `PortFlix-Linux-arm64.tar.gz` |
-| Android 8+ (phones and tablets, 64-bit) | `PortFlix-Android.apk` |
+| Windows 10 / 11 | `PortFlix-<version>-Setup.exe` |
+| Linux (x86_64: most PCs and the Steam Deck) | `PortFlix-<version>-Linux-x86_64.tar.gz` |
+| Linux ARM64 (Raspberry Pi and similar) | `PortFlix-<version>-Linux-arm64.tar.gz` |
+| Android 8+ (phones and tablets, 64-bit) | `PortFlix-<version>-Android.apk` |
 
 #### Windows
 
-1. Run `PortFlix-Setup.exe`.
+1. Run `PortFlix-<version>-Setup.exe`.
 2. If you see **"Windows protected your PC"**, click **More info → Run anyway**. The warning shows up because PortFlix is a new program without a digital signature yet. It is not a virus.
 3. Read and accept the terms, choose the folder (default `C:\PortFlix`) and you're done.
 
@@ -274,7 +274,7 @@ To uninstall, use **Windows Settings → Apps → PortFlix**. When you install a
 #### Linux
 
 ```bash
-tar -xzf PortFlix-Linux-x86_64.tar.gz
+tar -xzf PortFlix-*-Linux-x86_64.tar.gz
 cd PortFlix
 ./instalar.sh
 ```
@@ -288,7 +288,7 @@ PortFlix shows up in your app menu under **Games**. It opens in its own window u
 
 #### Android
 
-1. Download `PortFlix-Android.apk` on your phone and tap it.
+1. Download `PortFlix-<version>-Android.apk` on your phone and tap it.
 2. If Android asks, allow **"install unknown apps"** for the browser or file manager.
 3. Open PortFlix.
 

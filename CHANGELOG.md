@@ -6,7 +6,7 @@
 ### 1.5.0 (20/10/2026)
 
 #### 📱 PortFlix para Android (novo)
-- **App novo para celular e tablet Android** (Android 8.0 ou mais novo, aparelhos de 64 bits/ARM64, que são quase todos os atuais). O arquivo é o **PortFlix-Android.apk**.
+- **App novo para celular e tablet Android** (Android 8.0 ou mais novo, aparelhos de 64 bits/ARM64, que são quase todos os atuais). O arquivo é o **PortFlix-1.5.0-Android.apk**.
 - **Catálogo só de ports para Android:** o app mostra apenas os projetos que publicam APK para Android, como Zelda: Ocarina of Time (Ship of Harkinian), Sonic 3 A.I.R., Banjo: Recompiled, Half-Life (Xash3D), Diablo (DevilutionX), LEGO Island, Fallout CE, OpenMW e outros. A cada versão nova, ele confere se o APK existe mesmo. Projetos sem APK não aparecem.
 - **Telas pensadas para o celular:** Explorar (capas em grade, busca, filtro por console e "Novos"), Favoritos, Downloads, Avisos e Conta, com barra de abas embaixo. A página de cada jogo mostra capa, console, tipo (port, recomp, decomp), autor, versão, data, novidades da versão e o link do GitHub.
 - **Avisos na barra do celular** quando sai port novo ou versão nova. No Free chegam 24 horas depois; no PRO, na hora. Dá para desligar em Conta → Ajustes.
@@ -30,6 +30,8 @@
 
 #### 🖥️ Windows e Linux
 - Sem mudanças nas funções nesta versão: o número sobe para 1.5.0 para ficar igual em todos os sistemas.
+- Os arquivos da release agora têm a **versão no nome** (ex.: PortFlix-1.5.0-Setup.exe, PortFlix-1.5.0-Linux-x86_64.tar.gz). A atualização pelo app reconhece os nomes novos, e os botões do site sempre apontam para a versão mais nova.
+- Quem está na 1.4: desta vez use **Baixar pelo GitHub** (o "Instalar atualização" da 1.4 procura o nome antigo).
 
 ### 1.4.0 (20/10/2026)
 
@@ -171,7 +173,7 @@
 ### 1.5.0 (2026-10-20)
 
 #### 📱 PortFlix for Android (new)
-- **New app for Android phones and tablets** (Android 8.0 or newer, 64-bit/ARM64 devices, which is nearly all current ones). The file is **PortFlix-Android.apk**.
+- **New app for Android phones and tablets** (Android 8.0 or newer, 64-bit/ARM64 devices, which is nearly all current ones). The file is **PortFlix-1.5.0-Android.apk**.
 - **A catalog of Android ports only:** the app shows just the projects that publish an Android APK, such as Zelda: Ocarina of Time (Ship of Harkinian), Sonic 3 A.I.R., Banjo: Recompiled, Half-Life (Xash3D), Diablo (DevilutionX), LEGO Island, Fallout CE, OpenMW and more. On every new version it checks that the APK is really there. Projects without an APK don't show up.
 - **Screens made for phones:** Explore (cover grid, search, console filter and "New"), Favorites, Downloads, Alerts and Account, with a tab bar at the bottom. Each game page shows the cover, console, type (port, recomp, decomp), author, version, date, release notes and the GitHub link.
 - **Alerts in the phone's notifications** when a new port or version comes out. On Free they arrive 24 hours later; on PRO, right away. You can turn them off in Account → Settings.
@@ -195,6 +197,8 @@
 
 #### 🖥️ Windows and Linux
 - No feature changes in this version: the number goes up to 1.5.0 to match every system.
+- Release files now have the **version in their name** (e.g. PortFlix-1.5.0-Setup.exe, PortFlix-1.5.0-Linux-x86_64.tar.gz). Updating in the app understands the new names, and the website buttons always point to the newest version.
+- If you're on 1.4: this time use **Download from GitHub** (1.4's "Install update" looks for the old name).
 
 ### 1.4.0 (2026-10-20)
 
