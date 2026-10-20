@@ -17,10 +17,13 @@
 - **Atualização do próprio app:** quando sai versão nova do PortFlix, aparece um aviso no Explorar e em Conta, e o app baixa e abre a instalação da versão nova.
 - **Português e inglês:** segue o idioma do celular, ou escolha em Conta → Ajustes.
 - O botão **Voltar** do Android fecha a tela aberta; na tela inicial, ele minimiza o app.
+- **Capas no Android:** as capas dos ports aparecem no app e são buscadas sozinhas (e de novo a cada varredura). Na página do jogo dá para **trocar a capa** (sugestões, outro nome de busca ou link de imagem) ou voltar para a automática.
+- **Configurações completas:** tema (automático, escuro, claro), cor de destaque e colunas da grade (PRO), idioma, avisos por tipo, varredura automática do catálogo, capas, criadores que sigo, meus projetos, projetos ocultos, **sincronizar com o PC** (favoritos, ocultos, criadores e projetos), pasta de downloads, assistente de IA, perfil, atualizações e ajuda.
+- **PortFlix DEV para Android** (**PortFlix-DEV-1.5.0-Android.apk**, instala ao lado do app normal): atendimento (conversas do site, PC e Android com resposta direta), gerador e lista de licenças (criar, renovar, revogar, liberar aparelho, copiar mensagem, WhatsApp) e o mesmo catálogo do app.
 - Lembrete: os ports pedem os arquivos do **seu** jogo original. O PortFlix não inclui nem baixa jogos. As capas automáticas podem não bater com o jogo.
 
 #### 🌐 Site
-- Fundo novo no topo, mais sóbrio: luz ambiente e avisos de ports aparecendo ao vivo nas laterais, mostrando o que o app faz.
+- Fundo novo no topo: parede de capas de ports em perspectiva, radar girando e avisos de ports aparecendo ao vivo nas laterais, mostrando o que o app faz.
 - Texto do topo mais forte e legível, citando God of War III, Bloodborne e Uncharted (ports de PS4), Zelda, Mario, Sonic e Mortal Kombat.
 - Destaque próprio para o aviso de port novo ("Saiu port novo? Você fica sabendo na hora.").
 - Download do **Android** no site.
@@ -184,10 +187,13 @@
 - **Updates of the app itself:** when a new PortFlix version is out, a notice shows up in Explore and Account, and the app downloads and opens the installer of the new version.
 - **Portuguese and English:** follows the phone's language, or pick one in Account → Settings.
 - The Android **Back** button closes the open screen; on the home screen it minimizes the app.
+- **Covers on Android:** port covers show up in the app and are fetched automatically (and again after every scan). On the game page you can **change the cover** (suggestions, another search name or an image link) or go back to the automatic one.
+- **Full settings:** theme (automatic, dark, light), accent color and grid columns (PRO), language, alerts by kind, automatic catalog scan, covers, creators I follow, my projects, hidden projects, **sync with the PC** (favorites, hidden, creators and projects), downloads folder, AI assistant, profile, updates and help.
+- **PortFlix DEV for Android** (**PortFlix-DEV-1.5.0-Android.apk**, installs next to the regular app): support inbox (website, PC and Android chats with direct reply), license generator and list (create, renew, revoke, free a device, copy message, WhatsApp) and the same catalog as the app.
 - Reminder: ports need the files of **your** original game. PortFlix doesn't include or download games. Automatic covers may not match the game.
 
 #### 🌐 Website
-- New, more grounded background at the top: ambient light and port alerts showing up live on the sides, showing what the app does.
+- New background at the top: a perspective wall of port covers, a sweeping radar and port alerts showing up live on the sides, showing what the app does.
 - Stronger, easier-to-read top text, naming God of War III, Bloodborne and Uncharted (PS4 ports), Zelda, Mario, Sonic and Mortal Kombat.
 - Its own highlight for the new-port alert ("New port out? You'll know right away.").
 - **Android** download on the website.
