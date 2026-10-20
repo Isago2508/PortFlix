@@ -3,11 +3,27 @@
 <details open>
 <summary><h2>🇧🇷 Português</h2></summary>
 
+### 1.4.0 (19/10/2026)
+
+#### 🔗 Site e GitHub no topo do app
+- Dois botões novos no topo, ao lado do logo: **Site** abre o site do PortFlix e **GitHub** abre a página do projeto, com as versões, o código e o histórico de novidades.
+- Em janelas mais estreitas, os botões ficam só com o ícone, para não apertar o resto do topo.
+
+#### 🎮 Teste do controle novo
+- O teste em Configurações → Controle agora mostra um **desenho do controle**, no lugar da fileira de botões.
+- Cada botão acende e "afunda" quando é apertado, com brilho na cor do tema.
+- Os **analógicos se mexem** em tempo real dentro do círculo, com a zona morta desenhada e uma linha mostrando a direção. Apertar o analógico (L3/R3) acende ele.
+- Os **gatilhos** (LT/RT, L2/R2, ZL/ZR) mostram a pressão numa barrinha, de 0% a 100%.
+- Embaixo aparece a leitura ao vivo: botões apertados, posição dos dois analógicos e pressão dos gatilhos.
+- Controles sem o mapeamento padrão mostram o número de cada botão, para ajudar a remapear.
+- **Correção:** o teste não acompanhava os botões em alguns controles. Agora ele tem um acompanhamento próprio enquanto a aba Controle está aberta, e também percebe na hora quando um controle é conectado ou desconectado.
+- O desenho segue o tema claro ou escuro e as cores do PRO.
+
 ### 1.3.0 (19/10/2026)
 
 #### 🎮 Controle no estilo da Steam: nova aba Configurações → Controle
 - **Controles conectados:** mostra o nome de cada controle, o tipo reconhecido (Xbox, PlayStation ou Nintendo), quantos botões ele tem e se ele vibra. Quando você conecta um controle, aparece um aviso na tela.
-- **Teste ao vivo:** um desenho do controle mostra cada botão acendendo quando é apertado, os analógicos se mexendo em tempo real (com o círculo da zona morta), a pressão dos gatilhos e a lista do que está apertado. Controles sem mapeamento padrão mostram o número de cada botão.
+- **Teste ao vivo:** cada botão acende na tela quando é apertado, e os dois analógicos mostram a posição em tempo real, com o círculo da zona morta desenhado.
 - **Estilo dos botões na tela:** Automático (reconhece pelo controle), Xbox (A, B, X, Y), PlayStation (✕, ○, □, △) ou Nintendo (B, A, Y, X).
 - **Trocar Confirmar e Voltar**, do jeito dos consoles da Nintendo.
 - **Remapear cada ação:** Confirmar/abrir, Voltar/fechar, Página do jogo, Fileira de cima, Fileira de baixo, Sair do Modo TV e Abrir o Modo TV. Clique em **Mudar** e aperte o botão que quiser.
@@ -112,11 +128,27 @@
 <details>
 <summary><h2>🇺🇸 English</h2></summary>
 
+### 1.4.0 (2026-10-19)
+
+#### 🔗 Website and GitHub at the top of the app
+- Two new buttons at the top, next to the logo: **Site** opens the PortFlix website and **GitHub** opens the project page, with releases, code and changelog.
+- In narrower windows the buttons show only the icon, so the rest of the top bar isn't squeezed.
+
+#### 🎮 New controller test
+- The test in Settings → Controller now shows a **drawing of the controller** instead of a row of buttons.
+- Each button lights up and "presses in" when pressed, with a glow in the theme color.
+- The **sticks move** in real time inside their circle, with the dead zone drawn and a line showing the direction. Clicking a stick (L3/R3) lights it up.
+- **Triggers** (LT/RT, L2/R2, ZL/ZR) show their pressure in a small bar, from 0% to 100%.
+- Below it, a live readout: pressed buttons, position of both sticks and trigger pressure.
+- Controllers without the standard mapping show each button's number, to help with remapping.
+- **Fix:** the test didn't follow the buttons on some controllers. It now has its own update loop while the Controller tab is open, and notices right away when a controller is connected or disconnected.
+- The drawing follows the light or dark theme and the PRO colors.
+
 ### 1.3.0 (2026-10-19)
 
 #### 🎮 Steam-style controller settings: new Settings → Controller tab
 - **Connected controllers:** shows each controller's name, the detected type (Xbox, PlayStation or Nintendo), how many buttons it has and whether it vibrates. A notice appears on screen when you plug in a controller.
-- **Live test:** a drawing of the controller shows every button lighting up when pressed, the sticks moving in real time (with the dead zone circle), trigger pressure and a list of what is pressed. Controllers without the standard mapping show each button number.
+- **Live test:** every button lights up on screen when pressed, and both sticks show their position in real time, with the dead zone circle drawn.
 - **On-screen button style:** Automatic (detected from the controller), Xbox (A, B, X, Y), PlayStation (✕, ○, □, △) or Nintendo (B, A, Y, X).
 - **Swap Confirm and Back**, the Nintendo way.
 - **Remap every action:** Confirm/open, Back/close, Game page, Row up, Row down, Exit TV Mode and Open TV Mode. Click **Mudar** (Change) and press the button you want.
