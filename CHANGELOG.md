@@ -19,6 +19,11 @@
 - "Desinstalar o PortFlix" no menu do botão direito do atalho.
 - O PortFlix DEV traz sozinho os avisos e a biblioteca da pasta antiga.
 
+**Controle (estilo Steam)**
+- Nova aba **Configurações → Controle**: controles conectados, teste ao vivo dos botões e analógicos, estilo dos botões na tela (Xbox, PlayStation ou Nintendo, ou automático), trocar confirmar e voltar, **remapear** cada ação, zona morta, velocidade de navegação, vibração e teste de vibração.
+- Aperte **Menu/Options/+** no controle para abrir o Modo TV de qualquer lugar.
+- No Modo TV: botão para a página do jogo, botões de ombro pulam de fileira, navegação dentro das janelas e dicas com os botões do seu controle.
+
 **Atualizações**
 - **Instalar atualização** direto na aba Configurações → Atualizações, no Windows e no Linux, sem abrir o navegador. No final, uma janela pergunta se quer **reiniciar agora** ou **atualizar depois** (vale na próxima vez que abrir). Continuam as opções de baixar pelo GitHub ou pelo site.
 
@@ -79,6 +84,11 @@
 - `instalar.sh` also works from external drives, USB sticks and Windows partitions.
 - "Desinstalar o PortFlix" in the shortcut's right-click menu.
 - PortFlix DEV brings back alerts and library from the old folder by itself.
+
+**Controller (Steam style)**
+- New **Settings → Controller** tab: connected controllers, live test of buttons and sticks, on-screen button style (Xbox, PlayStation, Nintendo or automatic), swap confirm and back, **remap** every action, dead zone, navigation speed, vibration and vibration test.
+- Press **Menu/Options/+** on the controller to open TV Mode from anywhere.
+- In TV Mode: button for the game page, shoulder buttons jump rows, navigation inside dialogs and hints with your controller's buttons.
 
 **Updates**
 - **Install update** right from Settings → Updates, on Windows and Linux, without opening the browser. At the end, a window asks whether to **restart now** or **update later** (applies next time you open it). Downloading from GitHub or the website is still available.
