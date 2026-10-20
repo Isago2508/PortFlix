@@ -3,7 +3,19 @@
 <details open>
 <summary><h2>🇧🇷 Português</h2></summary>
 
-### 1.4.0 (19/10/2026)
+### 1.4.0 (20/10/2026)
+
+#### 💬 Atendimento por chat (site + app + WhatsApp)
+- Novo botão **Suporte** no topo do app (ao lado de Site e GitHub): abre um chat para falar com o atendimento do PortFlix. A resposta aparece no próprio chat e chega como aviso no sino e na bandeja.
+- O **site** ganhou o balão **Falar com a gente**, no canto da tela, em português e inglês. A conversa fica salva no navegador, e as respostas aparecem ali mesmo.
+- Cada mensagem nova avisa o atendimento no **WhatsApp**.
+- **Só no PortFlix DEV:** nova aba **Atendimento**, com todas as conversas do site e do app, contador de não lidas, resposta direta, copiar e-mail e apagar conversa. Mensagem nova gera aviso no sino e na bandeja.
+- Proteção contra spam: no máximo 20 mensagens por hora de cada lugar.
+- Nova opção em Configurações → Notificações: **Mensagens do atendimento**.
+
+#### 🖼️ Aviso sobre as capas
+- Na janela **Escolher capa**, em Configurações → Biblioteca, na primeira configuração e no aviso de "Capas atualizadas": as capas automáticas são buscadas pelo nome do jogo e **nem sempre batem com o jogo certo**, e você pode trocar qualquer uma do jeito que quiser (uma sugestão, um link de imagem ou um arquivo do PC). A capa escolhida à mão nunca é trocada pelas automáticas.
+- O mesmo aviso foi para o site (com uma pergunta nova nas Dúvidas), o README e o LEIA-ME.
 
 #### 🔗 Site e GitHub no topo do app
 - Dois botões novos no topo, ao lado do logo: **Site** abre o site do PortFlix e **GitHub** abre a página do projeto, com as versões, o código e o histórico de novidades.
@@ -128,7 +140,19 @@
 <details>
 <summary><h2>🇺🇸 English</h2></summary>
 
-### 1.4.0 (2026-10-19)
+### 1.4.0 (2026-10-20)
+
+#### 💬 Chat support (website + app + WhatsApp)
+- New **Suporte** (Support) button at the top of the app (next to Site and GitHub): opens a chat with PortFlix support. Replies show up in the chat itself and arrive as alerts in the bell and the tray.
+- The **website** got a **Talk to us** bubble in the corner of the screen, in Portuguese and English. The conversation is saved in the browser and replies show up right there.
+- Every new message notifies support on **WhatsApp**.
+- **PortFlix DEV only:** new **Atendimento** (Support) tab with every conversation from the website and the app, unread counter, direct reply, copy e-mail and delete conversation. New messages create alerts in the bell and the tray.
+- Spam protection: at most 20 messages per hour from each place.
+- New option in Settings → Notifications: **Support messages**.
+
+#### 🖼️ Note about covers
+- In the **Choose cover** window, in Settings → Library, in the first-run setup and in the "Covers updated" notice: automatic covers are found by the game's name and **don't always match the right game**, and you can swap any of them however you like (a suggestion, an image link or a file from your PC). A cover chosen by hand is never replaced by automatic ones.
+- The same note went to the website (with a new FAQ question), the README and the LEIA-ME.
 
 #### 🔗 Website and GitHub at the top of the app
 - Two new buttons at the top, next to the logo: **Site** opens the PortFlix website and **GitHub** opens the project page, with releases, code and changelog.
