@@ -39,21 +39,32 @@ O PortFlix é um catálogo que se atualiza sozinho com os projetos da comunidade
 
 | | Free | PRO |
 |---|:-:|:-:|
-| Catálogo de ports, recomps e decomps, atualizado sozinho | ✅ | ✅ |
-| Aba **Softwares** (emuladores, ferramentas e programas dos criadores que você segue) | ✅ | ✅ |
-| Capas automáticas, com opção de escolher a capa à mão | ✅ | ✅ |
-| Avisos de versão nova, com escolha dos tipos de notificação | ✅ | ✅ |
-| **Meus jogos**: abra os seus ports por aqui | ✅ | ✅ |
-| Visualização em grade, lista ou só capas, com ajuste de tamanho | ✅ | ✅ |
-| Tema claro, escuro ou automático; bandeja do sistema, confirmação ao sair e contador de notificações | ✅ | ✅ |
+| Catálogo de ports, recomps e decomps | ✅ 1x por dia | ✅ a cada hora ou quando quiser |
+| Avisos de versão nova | ✅ 24 h depois | ✅ **na hora** |
+| Aba **Softwares** e capas automáticas | ✅ | ✅ |
+| **Meus jogos** | ✅ até 5 | ✅ ilimitado |
+| Tema claro ou escuro, bandeja do sistema, aviso de atualização do app | ✅ | ✅ |
+| Filtros por console, ordem e "Últimos 7 dias"; escolher a capa à mão | – | ✅ |
+| **Favoritos e listas** (Quero jogar, Jogando agora, Zerados) | – | ✅ |
+| **Tempo de jogo** de cada port | – | ✅ |
+| **Modo TV** com controle (estilo Big Picture) | – | ✅ |
+| **Página do jogo**: imagens, novidades traduzidas, vídeos | – | ✅ |
+| **Baixar dentro do app**, com barra de progresso e extração | – | ✅ |
+| **Assistente com IA** grátis incluso | – | ✅ |
+| **Arquivo do jogo original** na pasta certa | – | ✅ |
+| **Sincronizar entre PCs**, exportar e importar a biblioteca | – | ✅ |
+| **Pendrive (modo técnico)**: leve os ports para outro PC | – | ✅ |
+| Widget de lançamentos na bandeja (Windows) | – | ✅ |
 | Cores de tema: vermelho, rosa, roxo, azul e neon | – | ✅ |
-| **Baixar dentro do app**, com barra de progresso e opção de extrair | – | ✅ |
-| **Assistente com IA** grátis já incluso (ou use o Gemini, ChatGPT, Claude ou Ollama) | – | ✅ |
-| **Arquivo do jogo original**: vincula a sua ROM/ISO ao port e coloca na pasta certa | – | ✅ |
-| Adicionar projetos próprios e seguir criadores do GitHub | – | ✅ |
-| Conectar a conta do GitHub (buscas mais rápidas) | – | ✅ |
+| Projetos próprios, seguir criadores e conectar o GitHub | – | ✅ |
+
+**PRO vitalício:** 1 PC por **R$ 30** ou 2 PCs por **R$ 50**, pagamento único. Compre no [site](https://isago2508.github.io/PortFlix/#precos) (Mercado Pago ou Pix pelo WhatsApp).
 
 O app é o mesmo para todo mundo: ele abre como **Free** e vira **PRO** quando você ativa uma chave.
+
+## Novidades
+
+Veja o que mudou em cada versão no **[CHANGELOG](CHANGELOG.md)**. O próprio PortFlix avisa quando sai versão nova e atualiza em **Configurações → Atualizações**.
 
 ## Telas
 
@@ -129,6 +140,8 @@ O PortFlix entra no menu de aplicativos, em **Jogos**. Ele abre numa janela pró
   - O assistente grátis já vem incluso no PRO, com um limite de mensagens por dia.
   - Para conversar sem limite, use a sua própria chave em **Configurações → Assistente**. O Gemini tem cota gratuita.
   - O assistente não indica onde baixar jogos.
+- **Modo TV:** clique no ícone da TV no topo. Navegue com as setas ou com o controle; **A/Enter** abre e **B/Esc** sai.
+- **Pendrive:** em Meus jogos → **Pendrive…**, copie os jogos para um pendrive e, no outro PC, use **Instalar a partir do pendrive**.
 - **Atalhos:** `F5` varre de novo e `Ctrl+F` busca.
 
 ## Privacidade
@@ -152,5 +165,6 @@ Ele não acessa os seus e-mails, arquivos nem contatos. Política completa: http
 
 ## Suporte
 
+- **WhatsApp:** [(48) 98851-6188](https://wa.me/5548988516188)
 - **E-mail:** hugofernandes30@gmail.com
 - **Problemas e sugestões:** use a aba [Issues](https://github.com/Isago2508/PortFlix/issues)
