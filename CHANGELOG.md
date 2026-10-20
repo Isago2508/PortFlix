@@ -3,6 +3,25 @@
 <details open>
 <summary><h2>🇧🇷 Português</h2></summary>
 
+### 1.3.0 (19/10/2026)
+
+**Assistente**
+- Responde "o que vai sair?": mostra os ports, recomps e decomps em andamento (ainda sem versão ou em teste) e os projetos novos e ativos no GitHub, com link e última atividade, e oferece colocar no radar.
+- Pesquisa direto, sem perguntar, e não mostra mais comandos internos na resposta.
+
+**Avisos**
+- Clicar no aviso de **projeto novo** ou **versão nova** abre a página do projeto no GitHub, sempre com uma janela perguntando antes de abrir o site. Quando são vários projetos, aparece a lista para escolher.
+
+**Linux**
+- **Instalador gráfico** igual ao do Windows: escolha da pasta, atalho no menu de aplicativos e na área de trabalho, atualizar, reinstalar do zero ou desinstalar.
+- Ao atualizar, o instalador fecha o PortFlix aberto (antes a versão antiga continuava rodando).
+- O `instalar.sh` funciona também a partir de HD externo, pendrive ou partição do Windows.
+- "Desinstalar o PortFlix" no menu do botão direito do atalho.
+- O PortFlix DEV traz sozinho os avisos e a biblioteca da pasta antiga.
+
+**Comunidade**
+- Discord (em construção), WhatsApp e site em **Configurações → Atualizações → Ajuda e comunidade**.
+
 ### 1.2.0 (19/10/2026)
 
 **Novo no PRO**
@@ -23,13 +42,10 @@
 - Filtros por console, ordem, listas e "Últimos 7 dias" e a escolha manual de capa passaram para o PRO.
 
 **Para todos**
-- Assistente: responde "o que vai sair?" com os projetos em andamento (sem versão ainda ou em teste) e os novos no GitHub, e não mostra mais comandos internos na resposta.
-- Clicar no aviso de **projeto novo** ou **versão nova** abre a página do projeto no GitHub, sempre perguntando antes de abrir o site.
 - Nova aba **Configurações → Atualizações**: mostra a versão instalada, procura a mais nova no GitHub e atualiza com 1 clique.
 - Aviso de versão nova do PortFlix no sino, na bandeja e no botão "⬆ Atualizar".
 - Configurações agora abrem direto na aba Geral (antes podia abrir em branco).
 - Linux: o PortFlix e o PortFlix DEV agora abrem ao mesmo tempo, cada um na sua janela e com a sua conta.
-- Linux: instalador gráfico igual ao do Windows (pasta, atalhos no menu e na área de trabalho, atualizar ou desinstalar). Ao atualizar, ele fecha o PortFlix aberto para não continuar rodando a versão antiga.
 - Tela de ativação com o botão para comprar o PRO (1 PC R$ 30 · 2 PCs R$ 50).
 
 ### 1.1.0 (19/10/2026)
@@ -44,6 +60,25 @@
 
 <details>
 <summary><h2>🇺🇸 English</h2></summary>
+
+### 1.3.0 (2026-10-19)
+
+**Assistant**
+- Answers "what's coming?": shows ports, recomps and decomps in progress (no release yet or in testing) and new active projects on GitHub, with link and last activity, and offers to add them to the radar.
+- Searches right away without asking, and no longer shows internal commands in replies.
+
+**Alerts**
+- Clicking a **new project** or **new version** alert opens the project page on GitHub, always with a window asking before opening the site. When there are several projects, a list lets you choose.
+
+**Linux**
+- **Graphical installer** like the Windows one: folder choice, app menu and desktop shortcuts, update, clean reinstall or uninstall.
+- When updating, the installer closes the running PortFlix (the old version used to keep running).
+- `instalar.sh` also works from external drives, USB sticks and Windows partitions.
+- "Desinstalar o PortFlix" in the shortcut's right-click menu.
+- PortFlix DEV brings back alerts and library from the old folder by itself.
+
+**Community**
+- Discord (work in progress), WhatsApp and website in **Settings → Updates → Help and community**.
 
 ### 1.2.0 (2026-10-19)
 
@@ -65,14 +100,11 @@
 - Filters by console, sorting, lists and "Last 7 days", and picking covers by hand, are now PRO.
 
 **For everyone**
-- Assistant: answers "what's coming?" with projects in progress (no release yet or in testing) and new ones on GitHub, and no longer shows internal commands in replies.
-- Clicking a **new project** or **new version** alert opens the project page on GitHub, always asking before opening the site.
 - New **Settings → Updates** tab: shows your version, checks GitHub for the newest one and updates with 1 click.
 - PortFlix update alert in the bell, in the tray and on the "⬆ Atualizar" button.
 - Settings now open on the General tab (they could open blank before).
 - Activation screen with a button to buy PRO (1 PC R$ 30 · 2 PCs R$ 50).
 - Linux: PortFlix and PortFlix DEV now open at the same time, each in its own window and with its own account.
-- Linux: graphical installer like the Windows one (folder, app menu and desktop shortcuts, update or uninstall). When updating, it closes the running PortFlix so the old version doesn't keep running.
 
 ### 1.1.0 (2026-10-19)
 - Light, dark or automatic theme; red, pink, purple, blue and neon colors (PRO).
