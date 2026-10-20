@@ -19,6 +19,9 @@
 - "Desinstalar o PortFlix" no menu do botão direito do atalho.
 - O PortFlix DEV traz sozinho os avisos e a biblioteca da pasta antiga.
 
+**Atualizações**
+- **Instalar atualização** direto na aba Configurações → Atualizações, no Windows e no Linux, sem abrir o navegador. No final, uma janela pergunta se quer **reiniciar agora** ou **atualizar depois** (vale na próxima vez que abrir). Continuam as opções de baixar pelo GitHub ou pelo site.
+
 **Comunidade**
 - Discord (em construção), WhatsApp e site em **Configurações → Atualizações → Ajuda e comunidade**.
 
@@ -76,6 +79,9 @@
 - `instalar.sh` also works from external drives, USB sticks and Windows partitions.
 - "Desinstalar o PortFlix" in the shortcut's right-click menu.
 - PortFlix DEV brings back alerts and library from the old folder by itself.
+
+**Updates**
+- **Install update** right from Settings → Updates, on Windows and Linux, without opening the browser. At the end, a window asks whether to **restart now** or **update later** (applies next time you open it). Downloading from GitHub or the website is still available.
 
 **Community**
 - Discord (work in progress), WhatsApp and website in **Settings → Updates → Help and community**.
