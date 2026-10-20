@@ -23,6 +23,7 @@
 - Nova aba **Configurações → Atualizações**: mostra a versão instalada, procura a mais nova no GitHub e atualiza com 1 clique.
 - Aviso de versão nova do PortFlix no sino, na bandeja e no botão "⬆ Atualizar".
 - Configurações agora abrem direto na aba Geral (antes podia abrir em branco).
+- Linux: o PortFlix e o PortFlix DEV agora abrem ao mesmo tempo, cada um na sua janela e com a sua conta.
 - Tela de ativação com o botão para comprar o PRO (1 PC R$ 30 · 2 PCs R$ 50).
 
 ## 1.1.0 (19/10/2026)
