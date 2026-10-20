@@ -3,10 +3,16 @@
 <details open>
 <summary><h2>🇧🇷 Português</h2></summary>
 
+### 1.5.1 (20/10/2026) — só Android
+
+- O app do Android agora tem **versão própria** (1.5.1), separada do PC e do Linux (1.5.0). Arquivos: **PortFlix-1.5.1-Android.apk** e **PortFlix-DEV-1.5.1-Android.apk**.
+- **Correção:** no PortFlix DEV, abrir uma conversa em Atendimento dava o erro "T(...) is not a function". Corrigido.
+- A atualização de um app não oferece mais a release do outro: o PC e o Linux ignoram releases só de Android, e o Android ignora as sem APK.
+
 ### 1.5.0 (20/10/2026)
 
 #### 📱 PortFlix para Android (novo)
-- **App novo para celular e tablet Android** (Android 8.0 ou mais novo, aparelhos de 64 bits/ARM64, que são quase todos os atuais). O arquivo é o **PortFlix-1.5.0-Android.apk**.
+- **App novo para celular e tablet Android** (Android 8.0 ou mais novo, aparelhos de 64 bits/ARM64, que são quase todos os atuais). O arquivo é o **PortFlix-1.5.1-Android.apk**.
 - **Catálogo só de ports para Android:** o app mostra apenas os projetos que publicam APK para Android, como Zelda: Ocarina of Time (Ship of Harkinian), Sonic 3 A.I.R., Banjo: Recompiled, Half-Life (Xash3D), Diablo (DevilutionX), LEGO Island, Fallout CE, OpenMW e outros. A cada versão nova, ele confere se o APK existe mesmo. Projetos sem APK não aparecem.
 - **Telas pensadas para o celular:** Explorar (capas em grade, busca, filtro por console e "Novos"), Favoritos, Downloads, Avisos e Conta, com barra de abas embaixo. A página de cada jogo mostra capa, console, tipo (port, recomp, decomp), autor, versão, data, novidades da versão e o link do GitHub.
 - **Avisos na barra do celular** quando sai port novo ou versão nova. No Free chegam 24 horas depois; no PRO, na hora. Dá para desligar em Conta → Ajustes.
@@ -19,7 +25,7 @@
 - O botão **Voltar** do Android fecha a tela aberta; na tela inicial, ele minimiza o app.
 - **Capas no Android:** as capas dos ports aparecem no app e são buscadas sozinhas (e de novo a cada varredura). Na página do jogo dá para **trocar a capa** (sugestões, outro nome de busca ou link de imagem) ou voltar para a automática.
 - **Configurações completas:** tema (automático, escuro, claro), cor de destaque e colunas da grade (PRO), idioma, avisos por tipo, varredura automática do catálogo, capas, criadores que sigo, meus projetos, projetos ocultos, **sincronizar com o PC** (favoritos, ocultos, criadores e projetos), pasta de downloads, assistente de IA, perfil, atualizações e ajuda.
-- **PortFlix DEV para Android** (**PortFlix-DEV-1.5.0-Android.apk**, instala ao lado do app normal): atendimento (conversas do site, PC e Android com resposta direta), gerador e lista de licenças (criar, renovar, revogar, liberar aparelho, copiar mensagem, WhatsApp) e o mesmo catálogo do app.
+- **PortFlix DEV para Android** (**PortFlix-DEV-1.5.1-Android.apk**, instala ao lado do app normal): atendimento (conversas do site, PC e Android com resposta direta), gerador e lista de licenças (criar, renovar, revogar, liberar aparelho, copiar mensagem, WhatsApp) e o mesmo catálogo do app.
 - Lembrete: os ports pedem os arquivos do **seu** jogo original. O PortFlix não inclui nem baixa jogos. As capas automáticas podem não bater com o jogo.
 
 #### 🌐 Site
@@ -173,10 +179,16 @@
 <details>
 <summary><h2>🇺🇸 English</h2></summary>
 
+### 1.5.1 (2026-10-20) — Android only
+
+- The Android app now has **its own version** (1.5.1), separate from PC and Linux (1.5.0). Files: **PortFlix-1.5.1-Android.apk** and **PortFlix-DEV-1.5.1-Android.apk**.
+- **Fix:** in PortFlix DEV, opening a conversation in Support showed the error "T(...) is not a function". Fixed.
+- App updates no longer offer the other app's release: PC and Linux ignore Android-only releases, and Android ignores the ones without an APK.
+
 ### 1.5.0 (2026-10-20)
 
 #### 📱 PortFlix for Android (new)
-- **New app for Android phones and tablets** (Android 8.0 or newer, 64-bit/ARM64 devices, which is nearly all current ones). The file is **PortFlix-1.5.0-Android.apk**.
+- **New app for Android phones and tablets** (Android 8.0 or newer, 64-bit/ARM64 devices, which is nearly all current ones). The file is **PortFlix-1.5.1-Android.apk**.
 - **A catalog of Android ports only:** the app shows just the projects that publish an Android APK, such as Zelda: Ocarina of Time (Ship of Harkinian), Sonic 3 A.I.R., Banjo: Recompiled, Half-Life (Xash3D), Diablo (DevilutionX), LEGO Island, Fallout CE, OpenMW and more. On every new version it checks that the APK is really there. Projects without an APK don't show up.
 - **Screens made for phones:** Explore (cover grid, search, console filter and "New"), Favorites, Downloads, Alerts and Account, with a tab bar at the bottom. Each game page shows the cover, console, type (port, recomp, decomp), author, version, date, release notes and the GitHub link.
 - **Alerts in the phone's notifications** when a new port or version comes out. On Free they arrive 24 hours later; on PRO, right away. You can turn them off in Account → Settings.
@@ -189,7 +201,7 @@
 - The Android **Back** button closes the open screen; on the home screen it minimizes the app.
 - **Covers on Android:** port covers show up in the app and are fetched automatically (and again after every scan). On the game page you can **change the cover** (suggestions, another search name or an image link) or go back to the automatic one.
 - **Full settings:** theme (automatic, dark, light), accent color and grid columns (PRO), language, alerts by kind, automatic catalog scan, covers, creators I follow, my projects, hidden projects, **sync with the PC** (favorites, hidden, creators and projects), downloads folder, AI assistant, profile, updates and help.
-- **PortFlix DEV for Android** (**PortFlix-DEV-1.5.0-Android.apk**, installs next to the regular app): support inbox (website, PC and Android chats with direct reply), license generator and list (create, renew, revoke, free a device, copy message, WhatsApp) and the same catalog as the app.
+- **PortFlix DEV for Android** (**PortFlix-DEV-1.5.1-Android.apk**, installs next to the regular app): support inbox (website, PC and Android chats with direct reply), license generator and list (create, renew, revoke, free a device, copy message, WhatsApp) and the same catalog as the app.
 - Reminder: ports need the files of **your** original game. PortFlix doesn't include or download games. Automatic covers may not match the game.
 
 #### 🌐 Website
