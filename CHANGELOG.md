@@ -23,6 +23,7 @@
 - Filtros por console, ordem, listas e "Últimos 7 dias" e a escolha manual de capa passaram para o PRO.
 
 **Para todos**
+- Assistente: responde "o que vai sair?" com os projetos em andamento (sem versão ainda ou em teste) e os novos no GitHub, e não mostra mais comandos internos na resposta.
 - Clicar no aviso de **projeto novo** ou **versão nova** abre a página do projeto no GitHub, sempre perguntando antes de abrir o site.
 - Nova aba **Configurações → Atualizações**: mostra a versão instalada, procura a mais nova no GitHub e atualiza com 1 clique.
 - Aviso de versão nova do PortFlix no sino, na bandeja e no botão "⬆ Atualizar".
@@ -64,6 +65,7 @@
 - Filters by console, sorting, lists and "Last 7 days", and picking covers by hand, are now PRO.
 
 **For everyone**
+- Assistant: answers "what's coming?" with projects in progress (no release yet or in testing) and new ones on GitHub, and no longer shows internal commands in replies.
 - Clicking a **new project** or **new version** alert opens the project page on GitHub, always asking before opening the site.
 - New **Settings → Updates** tab: shows your version, checks GitHub for the newest one and updates with 1 click.
 - PortFlix update alert in the bell, in the tray and on the "⬆ Atualizar" button.
