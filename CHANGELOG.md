@@ -7,7 +7,7 @@
 
 #### 🎮 Controle no estilo da Steam: nova aba Configurações → Controle
 - **Controles conectados:** mostra o nome de cada controle, o tipo reconhecido (Xbox, PlayStation ou Nintendo), quantos botões ele tem e se ele vibra. Quando você conecta um controle, aparece um aviso na tela.
-- **Teste ao vivo:** cada botão acende na tela quando é apertado, e os dois analógicos mostram a posição em tempo real, com o círculo da zona morta desenhado.
+- **Teste ao vivo:** um desenho do controle mostra cada botão acendendo quando é apertado, os analógicos se mexendo em tempo real (com o círculo da zona morta), a pressão dos gatilhos e a lista do que está apertado. Controles sem mapeamento padrão mostram o número de cada botão.
 - **Estilo dos botões na tela:** Automático (reconhece pelo controle), Xbox (A, B, X, Y), PlayStation (✕, ○, □, △) ou Nintendo (B, A, Y, X).
 - **Trocar Confirmar e Voltar**, do jeito dos consoles da Nintendo.
 - **Remapear cada ação:** Confirmar/abrir, Voltar/fechar, Página do jogo, Fileira de cima, Fileira de baixo, Sair do Modo TV e Abrir o Modo TV. Clique em **Mudar** e aperte o botão que quiser.
@@ -116,7 +116,7 @@
 
 #### 🎮 Steam-style controller settings: new Settings → Controller tab
 - **Connected controllers:** shows each controller's name, the detected type (Xbox, PlayStation or Nintendo), how many buttons it has and whether it vibrates. A notice appears on screen when you plug in a controller.
-- **Live test:** every button lights up on screen when pressed, and both sticks show their position in real time, with the dead zone circle drawn.
+- **Live test:** a drawing of the controller shows every button lighting up when pressed, the sticks moving in real time (with the dead zone circle), trigger pressure and a list of what is pressed. Controllers without the standard mapping show each button number.
 - **On-screen button style:** Automatic (detected from the controller), Xbox (A, B, X, Y), PlayStation (✕, ○, □, △) or Nintendo (B, A, Y, X).
 - **Swap Confirm and Back**, the Nintendo way.
 - **Remap every action:** Confirm/open, Back/close, Game page, Row up, Row down, Exit TV Mode and Open TV Mode. Click **Mudar** (Change) and press the button you want.
