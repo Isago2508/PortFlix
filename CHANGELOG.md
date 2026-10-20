@@ -9,7 +9,7 @@
 - Novo botão **Suporte** no topo do app (ao lado de Site e GitHub): abre um chat para falar com o atendimento do PortFlix. A resposta aparece no próprio chat e chega como aviso no sino e na bandeja.
 - O **site** ganhou o balão **Falar com a gente**, no canto da tela, em português e inglês. A conversa fica salva no navegador, e as respostas aparecem ali mesmo.
 - Cada mensagem nova avisa o atendimento no **WhatsApp**.
-- **Só no PortFlix DEV:** nova aba **Atendimento**, com todas as conversas do site e do app, contador de não lidas, resposta direta, copiar e-mail e apagar conversa. Mensagem nova gera aviso no sino e na bandeja.
+- **Só no PortFlix DEV:** nova aba **Atendimento**, com todas as conversas do site e do app (com a divisória entre a lista e o chat ajustável: arraste para os lados, dois cliques volta ao normal), contador de não lidas, resposta direta, copiar e-mail e apagar conversa. Mensagem nova gera aviso no sino e na bandeja.
 - Proteção contra spam: no máximo 20 mensagens por hora de cada lugar.
 - Nova opção em Configurações → Notificações: **Mensagens do atendimento**.
 
@@ -146,7 +146,7 @@
 - New **Suporte** (Support) button at the top of the app (next to Site and GitHub): opens a chat with PortFlix support. Replies show up in the chat itself and arrive as alerts in the bell and the tray.
 - The **website** got a **Talk to us** bubble in the corner of the screen, in Portuguese and English. The conversation is saved in the browser and replies show up right there.
 - Every new message notifies support on **WhatsApp**.
-- **PortFlix DEV only:** new **Atendimento** (Support) tab with every conversation from the website and the app, unread counter, direct reply, copy e-mail and delete conversation. New messages create alerts in the bell and the tray.
+- **PortFlix DEV only:** new **Atendimento** (Support) tab with every conversation from the website and the app (the divider between the list and the chat can be dragged sideways; double-click resets it), unread counter, direct reply, copy e-mail and delete conversation. New messages create alerts in the bell and the tray.
 - Spam protection: at most 20 messages per hour from each place.
 - New option in Settings → Notifications: **Support messages**.
 
