@@ -3,6 +3,34 @@
 <details open>
 <summary><h2>🇧🇷 Português</h2></summary>
 
+### 1.5.0 (20/10/2026)
+
+#### 📱 PortFlix para Android (novo)
+- **App novo para celular e tablet Android** (Android 8.0 ou mais novo, aparelhos de 64 bits/ARM64, que são quase todos os atuais). O arquivo é o **PortFlix-Android.apk**.
+- **Catálogo só de ports para Android:** o app mostra apenas os projetos que publicam APK para Android, como Zelda: Ocarina of Time (Ship of Harkinian), Sonic 3 A.I.R., Banjo: Recompiled, Half-Life (Xash3D), Diablo (DevilutionX), LEGO Island, Fallout CE, OpenMW e outros. A cada versão nova, ele confere se o APK existe mesmo. Projetos sem APK não aparecem.
+- **Telas pensadas para o celular:** Explorar (capas em grade, busca, filtro por console e "Novos"), Favoritos, Downloads, Avisos e Conta, com barra de abas embaixo. A página de cada jogo mostra capa, console, tipo (port, recomp, decomp), autor, versão, data, novidades da versão e o link do GitHub.
+- **Avisos na barra do celular** quando sai port novo ou versão nova. No Free chegam 24 horas depois; no PRO, na hora. Dá para desligar em Conta → Ajustes.
+- **PRO com a mesma chave do PC:** entre com o mesmo e-mail da compra (Google, Hotmail ou Outlook) e cole a chave. O celular ocupa uma vaga da chave, igual a um PC. Para liberar a vaga, use "Remover a licença deste celular".
+- **PRO: baixar e instalar pelo app.** O APK baixa com barra de progresso e instala com um toque em Instalar. Na primeira vez o Android pede para liberar "instalar apps desconhecidos" para o PortFlix: libere, volte e a instalação continua sozinha. No Free, o Baixar abre a página do download no navegador.
+- **Downloads:** lista dos APKs baixados, com Instalar e Apagar.
+- **Suporte por chat** dentro do app, no mesmo atendimento do site e do PC. A resposta aparece no app e chega como aviso. Também tem atalhos para o site, WhatsApp, Discord (em construção) e GitHub.
+- **Atualização do próprio app:** quando sai versão nova do PortFlix, aparece um aviso no Explorar e em Conta, e o app baixa e abre a instalação da versão nova.
+- **Português e inglês:** segue o idioma do celular, ou escolha em Conta → Ajustes.
+- O botão **Voltar** do Android fecha a tela aberta; na tela inicial, ele minimiza o app.
+- Lembrete: os ports pedem os arquivos do **seu** jogo original. O PortFlix não inclui nem baixa jogos. As capas automáticas podem não bater com o jogo.
+
+#### 🌐 Site
+- Fundo novo no topo, mais sóbrio: luz ambiente e avisos de ports aparecendo ao vivo nas laterais, mostrando o que o app faz.
+- Texto do topo mais forte e legível, citando God of War III, Bloodborne e Uncharted (ports de PS4), Zelda, Mario, Sonic e Mortal Kombat.
+- Destaque próprio para o aviso de port novo ("Saiu port novo? Você fica sabendo na hora.").
+- Download do **Android** no site.
+
+#### 💬 Atendimento
+- As conversas abertas pelo app do Android aparecem no PortFlix DEV → Atendimento com a etiqueta **ANDROID**, e o aviso no Telegram diz que veio do Android.
+
+#### 🖥️ Windows e Linux
+- Sem mudanças nas funções nesta versão: o número sobe para 1.5.0 para ficar igual em todos os sistemas.
+
 ### 1.4.0 (20/10/2026)
 
 #### 💬 Atendimento por chat (site + app + WhatsApp)
@@ -139,6 +167,34 @@
 
 <details>
 <summary><h2>🇺🇸 English</h2></summary>
+
+### 1.5.0 (2026-10-20)
+
+#### 📱 PortFlix for Android (new)
+- **New app for Android phones and tablets** (Android 8.0 or newer, 64-bit/ARM64 devices, which is nearly all current ones). The file is **PortFlix-Android.apk**.
+- **A catalog of Android ports only:** the app shows just the projects that publish an Android APK, such as Zelda: Ocarina of Time (Ship of Harkinian), Sonic 3 A.I.R., Banjo: Recompiled, Half-Life (Xash3D), Diablo (DevilutionX), LEGO Island, Fallout CE, OpenMW and more. On every new version it checks that the APK is really there. Projects without an APK don't show up.
+- **Screens made for phones:** Explore (cover grid, search, console filter and "New"), Favorites, Downloads, Alerts and Account, with a tab bar at the bottom. Each game page shows the cover, console, type (port, recomp, decomp), author, version, date, release notes and the GitHub link.
+- **Alerts in the phone's notifications** when a new port or version comes out. On Free they arrive 24 hours later; on PRO, right away. You can turn them off in Account → Settings.
+- **PRO with the same key as your PC:** sign in with the e-mail used to buy (Google, Hotmail or Outlook) and paste the key. The phone takes one slot of the key, just like a PC. To free the slot, use "Remove the license from this phone".
+- **PRO: download and install in the app.** The APK downloads with a progress bar and installs with one tap on Install. The first time, Android asks you to allow "install unknown apps" for PortFlix: allow it, come back and the install continues by itself. On Free, Download opens the download page in the browser.
+- **Downloads:** a list of the APKs you downloaded, with Install and Delete.
+- **Chat support** inside the app, in the same inbox as the website and the PC app. The answer shows up in the app and arrives as an alert. There are also shortcuts to the website, WhatsApp, Discord (under construction) and GitHub.
+- **Updates of the app itself:** when a new PortFlix version is out, a notice shows up in Explore and Account, and the app downloads and opens the installer of the new version.
+- **Portuguese and English:** follows the phone's language, or pick one in Account → Settings.
+- The Android **Back** button closes the open screen; on the home screen it minimizes the app.
+- Reminder: ports need the files of **your** original game. PortFlix doesn't include or download games. Automatic covers may not match the game.
+
+#### 🌐 Website
+- New, more grounded background at the top: ambient light and port alerts showing up live on the sides, showing what the app does.
+- Stronger, easier-to-read top text, naming God of War III, Bloodborne and Uncharted (PS4 ports), Zelda, Mario, Sonic and Mortal Kombat.
+- Its own highlight for the new-port alert ("New port out? You'll know right away.").
+- **Android** download on the website.
+
+#### 💬 Support
+- Conversations started from the Android app show up in PortFlix DEV → Support with an **ANDROID** label, and the Telegram alert says it came from Android.
+
+#### 🖥️ Windows and Linux
+- No feature changes in this version: the number goes up to 1.5.0 to match every system.
 
 ### 1.4.0 (2026-10-20)
 

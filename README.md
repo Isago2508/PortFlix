@@ -99,6 +99,7 @@ Baixe em **[Releases](https://github.com/Isago2508/PortFlix/releases/latest)**:
 | Windows 10 / 11 | `PortFlix-Setup.exe` |
 | Linux (x86_64: a maioria dos PCs e o Steam Deck) | `PortFlix-Linux-x86_64.tar.gz` |
 | Linux ARM64 (Raspberry Pi e similares) | `PortFlix-Linux-arm64.tar.gz` |
+| Android 8+ (celular e tablet, 64 bits) | `PortFlix-Android.apk` |
 
 #### Windows
 
@@ -124,6 +125,14 @@ O PortFlix entra no menu de aplicativos, em **Jogos**. Ele abre numa janela pró
 - **Programas opcionais:** `zenity` ou `kdialog` (janela para escolher pastas), `wl-clipboard` ou `xclip` (copiar texto).
 - **Instalador:** dois cliques no `instalar.sh` abrem o mesmo instalador do Windows (pasta, atalhos, atualizar ou desinstalar).
 - **Desinstalar:** botão direito no PortFlix no menu de aplicativos → **Desinstalar o PortFlix**, ou rode o `instalar.sh` de novo.
+
+#### Android
+
+1. Baixe o `PortFlix-Android.apk` no celular e toque nele.
+2. Se o Android pedir, libere **"instalar apps desconhecidos"** para o navegador ou o gerenciador de arquivos.
+3. Abra o PortFlix.
+
+No Android, o catálogo mostra **só os ports que têm APK para Android**. No PRO, o app baixa e instala o APK sozinho (na primeira vez, o Android pede a mesma liberação para o PortFlix). A chave PRO é a mesma do PC: o celular ocupa uma vaga da chave.
 
 ### Ativar o PRO
 
@@ -250,6 +259,7 @@ Get it from **[Releases](https://github.com/Isago2508/PortFlix/releases/latest)*
 | Windows 10 / 11 | `PortFlix-Setup.exe` |
 | Linux (x86_64: most PCs and the Steam Deck) | `PortFlix-Linux-x86_64.tar.gz` |
 | Linux ARM64 (Raspberry Pi and similar) | `PortFlix-Linux-arm64.tar.gz` |
+| Android 8+ (phones and tablets, 64-bit) | `PortFlix-Android.apk` |
 
 #### Windows
 
@@ -275,6 +285,14 @@ PortFlix shows up in your app menu under **Games**. It opens in its own window u
 - **Optional tools:** `zenity` or `kdialog` (folder picker), `wl-clipboard` or `xclip` (copy text).
 - **Installer:** double-click `instalar.sh` to open the same installer as on Windows (folder, shortcuts, update or uninstall).
 - **Uninstall:** right-click PortFlix in the app menu → **Desinstalar o PortFlix**, or run `instalar.sh` again.
+
+#### Android
+
+1. Download `PortFlix-Android.apk` on your phone and tap it.
+2. If Android asks, allow **"install unknown apps"** for the browser or file manager.
+3. Open PortFlix.
+
+On Android, the catalog shows **only the ports that have an Android APK**. On PRO, the app downloads and installs the APK by itself (the first time, Android asks for the same permission for PortFlix). The PRO key is the same as on your PC: the phone takes one slot of the key.
 
 ### Activating PRO
 
