@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=10">
 <script>
 // idioma: escolhido antes > ?lang= > idioma do navegador
 (function(){ var q=new URLSearchParams(location.search).get("lang"), s=null; try{ s=localStorage.getItem("pf_lang"); }catch(e){}
@@ -228,6 +228,7 @@ function setLang(l){ document.documentElement.dataset.lang=l; document.documentE
 setLang(document.documentElement.dataset.lang);
 document.getElementById("langBtn").onclick=()=>setLang(document.documentElement.dataset.lang==="en"?"pt":"en");
 </script>
+<script src="bg.js?v=1" defer></script>
 <script src="chat.js?v=2" defer></script>
 </body>
 </html>
