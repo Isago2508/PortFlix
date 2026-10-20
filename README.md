@@ -63,6 +63,8 @@ O PortFlix é um catálogo que se atualiza sozinho com os projetos da comunidade
 
 **PRO vitalício:** 1 PC por **R$ 30** ou 2 PCs por **R$ 50**, pagamento único. Compre no [site](https://isago2508.github.io/PortFlix/#precos) (Mercado Pago ou Pix pelo WhatsApp).
 
+¹ As capas automáticas são buscadas pelo nome do jogo e **nem sempre vão bater com o jogo certo**. No PRO você troca qualquer capa do jeito que quiser: uma sugestão, um link de imagem ou um arquivo do seu PC.
+
 O app é o mesmo para todo mundo: ele abre como **Free** e vira **PRO** quando você ativa uma chave.
 
 ### Novidades
@@ -193,7 +195,7 @@ PortFlix is a self-updating catalog of the community projects that bring console
 |---|:-:|:-:|
 | Catalog of ports, recomps and decomps | ✅ once a day | ✅ every hour or whenever you want |
 | New version alerts | ✅ 24 h later | ✅ **instantly** |
-| **Software** tab and automatic covers | ✅ | ✅ |
+| **Software** tab and automatic covers¹ | ✅ | ✅ |
 | **My games** | ✅ up to 5 | ✅ unlimited |
 | Light or dark theme, system tray, app update alerts | ✅ | ✅ |
 | Filters by console, sorting and "Last 7 days"; pick covers by hand | – | ✅ |
@@ -211,6 +213,8 @@ PortFlix is a self-updating catalog of the community projects that bring console
 | Your own projects, follow creators and connect GitHub | – | ✅ |
 
 **PRO for life:** 1 PC for **R$ 30** or 2 PCs for **R$ 50** (Brazilian reais), one-time payment. Buy it on the [website](https://isago2508.github.io/PortFlix/?lang=en#pricing) (Mercado Pago) or [message us on WhatsApp](https://wa.me/5548988516188) to pay another way.
+
+¹ Automatic covers are found by the game's name and **won't always match the right game**. With PRO you can swap any cover however you like: a suggestion, an image link or a file from your PC.
 
 The app is the same for everyone: it opens as **Free** and becomes **PRO** when you activate a key.
 

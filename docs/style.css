@@ -71,3 +71,25 @@ a.plan:hover{border-color:#3a434c;box-shadow:0 20px 50px rgba(0,0,0,.35)}a.plan.
 .lang{font-weight:700!important;color:var(--tx)!important;border:1px solid var(--line);border-radius:8px;padding:4px 10px}
 html[data-lang=en] [data-l=pt],html:not([data-lang=en]) [data-l=en]{display:none!important}
 button.lang{background:transparent;cursor:pointer;font:inherit;font-size:14px}
+/* chat de suporte */
+.pfchat{position:fixed;right:18px;bottom:18px;z-index:60;font-size:14px}
+.pfchat-fab{display:flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#1a1203;border:0;border-radius:999px;padding:12px 18px;font:700 14px Inter,system-ui,sans-serif;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.45);position:relative}
+.pfchat-fab svg{width:20px;height:20px}
+.pfchat.on .pfchat-fab .pfchat-lbl{display:none}
+.pfchat-dot{position:absolute;top:2px;right:2px;width:12px;height:12px;border-radius:50%;background:#ff4d4d;border:2px solid var(--bg)}
+.pfchat-win{position:absolute;right:0;bottom:62px;width:min(370px,calc(100vw - 36px));height:min(520px,calc(100vh - 110px));display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.pfchat-win[hidden]{display:none}
+.pfchat-win header{display:flex;align-items:flex-start;gap:10px;padding:14px 16px;background:var(--bg2);border-bottom:1px solid var(--line)}
+.pfchat-win header b{display:block;font-size:15px}.pfchat-win header small{color:var(--mut);font-size:12.5px}
+.pfchat-x{margin-left:auto;background:transparent;border:0;color:var(--mut);font-size:16px;cursor:pointer}
+.pfchat-list{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.pfchat-empty{color:var(--mut);text-align:center;margin:auto 10px}
+.pfchat-m{max-width:85%;padding:8px 12px;border-radius:12px;background:var(--bg2);border:1px solid var(--line)}
+.pfchat-m.me{align-self:flex-end;background:color-mix(in srgb,var(--acc) 18%,var(--card));border-color:color-mix(in srgb,var(--acc) 40%,transparent)}
+.pfchat-m small{display:block;color:var(--mut);font-size:11px;margin-bottom:2px}.pfchat-m p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.pfchat-form{border-top:1px solid var(--line);padding:10px;display:grid;gap:8px}
+.pfchat-who{display:grid;grid-template-columns:1fr 1fr;gap:6px}.pfchat-who[hidden]{display:none}
+.pfchat-form input,.pfchat-form textarea{width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--line);border-radius:9px;padding:8px 10px;font:inherit;resize:none}
+.pfchat-row{display:flex;gap:6px;align-items:flex-end}.pfchat-row .btn{flex:none}
+.pfchat-wa{font-size:12px;text-align:center;color:var(--mut)!important}
+@media (max-width:520px){.pfchat-fab .pfchat-lbl{display:none}}
