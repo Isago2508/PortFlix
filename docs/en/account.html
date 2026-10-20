@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My account · PortFlix</title>
+<meta name="description" content="Sign in with Google to buy PortFlix PRO and see your keys.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=5">
+<script src="https://accounts.google.com/gsi/client" async></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><img src="../icone.png" alt=""><span>PORT<b>FLIX</b></span></a>
+  <nav class="links"><a href="./">Home</a><a class="lang" href="../conta.html" hreflang="pt-BR" title="Português">🇧🇷 PT</a><a href="./#pricing">Pricing</a><a id="sair" href="#" hidden>Sign out</a></nav>
+</div></header>
+
+<main class="wrap">
+  <div class="box" id="app"><p><span class="spin"></span>Loading…</p></div>
+  <p class="small" style="text-align:center;margin-bottom:40px">Questions? <a href="https://wa.me/5548988516188" target="_blank" rel="noopener">WhatsApp +55 48 98851-6188</a> · <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a></p>
+</main>
+
+<script>
+const API = "https://portsradar-licencas.portsradar-hugo.workers.dev";
+const $ = s => document.querySelector(s);
+const q = new URLSearchParams(location.search);
+let PUB = {}, ID = "", ME = null;
+const store = { get(){ try { return sessionStorage.getItem("pf_id") || ""; } catch { return ""; } }, set(v){ try { v ? sessionStorage.setItem("pf_id", v) : sessionStorage.removeItem("pf_id"); } catch {} } };
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const WA = "https://wa.me/5548988516188";
+const waLink = email => WA + "?text=" + encodeURIComponent("Hi! I want to buy PortFlix PRO lifetime. Plan: (1 PC R$ 30 / 2 PCs R$ 50). My PortFlix e-mail is: " + (email || ""));
+const PLANS = () => (ME && ME.plans) || PUB.plans || [{ pcs: 1, price: 30 }, { pcs: 2, price: 50 }];
+const brl = n => Number(n).toLocaleString("en-US", { style: "currency", currency: "BRL" });
+
+async function api(path, opt = {}) {
+  const r = await fetch(API + path, { ...opt, headers: { "content-type": "application/json", ...(ID ? { authorization: "Bearer " + ID } : {}) } });
+  const j = await r.json().catch(() => ({}));
+  if (r.status === 401) { ID = ""; store.set(""); }
+  if (!r.ok) throw new Error(j.message || "Error " + r.status);
+  return j;
+}
+function view(html) { $("#app").innerHTML = html; }
+
+async function start() {
+  try { PUB = await api("/v1/public"); } catch { view(`<h1>My account</h1><div class="msg bad">Could not reach the server. Please try again in a moment.</div>`); return; }
+  ID = store.get();
+  if (ID) { try { ME = await api("/v1/web/me"); } catch { ME = null; } }
+  ME ? logged() : login();
+}
+
+function login() {
+  $("#sair").hidden = true;
+  view(`<h1>My account</h1>
+    <p class="small">Sign in with Google to buy PRO and see your keys.</p>
+    <div class="msg" style="border-color:var(--acc)"><b>⚠️ Mind the e-mail</b><br>Sign in with the <b>same e-mail</b> you will use in the PortFlix app. The PRO key is tied to that e-mail: when activating, the app only accepts it if you sign in with it.</div>
+    <div id="gbtn" style="margin:22px 0"></div>
+    <p class="small">We only use your name and e-mail. <a href="${API}/privacidade">Privacy</a></p>`);
+  if (!PUB.webClientId) { $("#gbtn").innerHTML = `<div class="msg">Website sign-in is being set up. Meanwhile, buy via <a href="${WA}" target="_blank" rel="noopener">WhatsApp +55 48 98851-6188</a> or e-mail <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</div>`; return; }
+  const go = () => {
+    if (!window.google?.accounts?.id) return setTimeout(go, 150);
+    google.accounts.id.initialize({ client_id: PUB.webClientId, callback: onGoogle, ux_mode: "popup" });
+    google.accounts.id.renderButton($("#gbtn"), { theme: "filled_black", size: "large", shape: "pill", text: "signin_with", locale: "en" });
+  };
+  go();
+}
+
+async function onGoogle(res) {
+  try {
+    const j = await api("/v1/web/google", { method: "POST", body: JSON.stringify({ credential: res.credential }) });
+    ID = j.identity; store.set(ID);
+    ME = await api("/v1/web/me");
+    logged();
+  } catch (e) { alert(e.message); }
+}
+
+function keyHtml(k) {
+  const st = k.status === "active" ? (k.activated ? `active · ${k.devices}/${k.maxDevices} PCs` : "ready to activate") : k.status === "revoked" ? "canceled" : "expired";
+  return `<div class="keyrow"><code>${esc(k.key)}</code><button class="btn sm" onclick="copy('${esc(k.key)}',this)">Copy</button><span class="st">${k.lifetime ? "Lifetime · " : ""}${st}</span></div>`;
+}
+window.copy = (t, b) => { navigator.clipboard?.writeText(t).then(() => { b.textContent = "Copied!"; setTimeout(() => b.textContent = "Copy", 1500); }); };
+
+const HOW = `<h3 style="margin-top:26px">How to activate</h3><ol class="steps">
+  <li>Download and open PortFlix (<a href="./#download">download</a>).</li>
+  <li>Click <b>Ativar PRO</b> at the top.</li>
+  <li>Sign in with <b>this same Google account</b>.</li>
+  <li>Paste the key and click <b>Ativar</b>.</li></ol>`;
+
+function logged() {
+  $("#sair").hidden = false;
+  const w = ME.who, ks = ME.keys || [];
+  const active = ks.some(k => k.status === "active");
+  view(`<h1>My account</h1>
+    <div class="who">${w.pic ? `<img src="${esc(w.pic)}" alt="" referrerpolicy="no-referrer">` : ""}<div><b>${esc(w.name || w.email)}</b><div class="small" style="margin:0">${esc(w.email)}</div></div></div>
+    <div id="pedido"></div>
+    <h3>Your keys</h3>
+    ${ks.length ? ks.map(keyHtml).join("") : `<p class="small">You have no PRO keys yet.</p>`}
+    ${active ? HOW : ""}
+    <div class="plan pro" style="margin-top:26px">
+      <h3>PortFlix PRO lifetime</h3><div class="small">One-time payment · prices in Brazilian reais</div>
+      <div class="plans2">${PLANS().map((p, i) => `<label class="opt"><input type="radio" name="pcs" value="${p.pcs}" ${Number(q.get("pcs") || 1) === p.pcs ? "checked" : ""}><span><b>${p.pcs} ${p.pcs > 1 ? "PCs" : "PC"}</b><em>${brl(p.price)}</em></span></label>`).join("")}</div>
+      <div class="msg" style="border-color:var(--acc)">The key will be created for <b>${esc(w.email)}</b>. In the app, sign in with <b>this same e-mail</b> to activate. To use another one, click <b>Sign out</b> and sign in with it before buying.</div>
+      <div class="cta" style="justify-content:flex-start;margin-top:18px">${ME.buyOnline ? `<button class="btn pri" id="buy">${active ? "Buy another key" : "Buy now"}</button>` : ""}<a class="btn wa" href="${waLink(w.email)}" target="_blank" rel="noopener">💬 Buy via WhatsApp</a></div>
+      <p class="small">${ME.buyOnline ? "<b>Buy now:</b> Mercado Pago, the key shows up here instantly.<br>" : ""}<b>WhatsApp:</b> talk to us to pay another way; your PRO key will show up on this page.</p>
+    </div>`);
+  if ($("#buy")) $("#buy").onclick = buy;
+  if (q.get("pedido")) watchOrder(q.get("pedido"));
+}
+
+async function buy() {
+  const b = $("#buy"); b.disabled = true; b.innerHTML = `<span class="spin"></span>Opening Mercado Pago…`;
+  const pcs = Number(document.querySelector('input[name=pcs]:checked')?.value || 1);
+  try { const j = await api("/v1/web/checkout", { method: "POST", body: JSON.stringify({ pcs, lang: "en" }) }); location.href = j.url; }
+  catch (e) { b.disabled = false; b.textContent = "Buy now"; alert(e.message); }
+}
+
+async function watchOrder(id) {
+  const box = $("#pedido");
+  for (let i = 0; i < 60; i++) {
+    let o;
+    try { o = await api("/v1/web/order?id=" + encodeURIComponent(id)); } catch (e) { box.innerHTML = `<div class="msg bad">${esc(e.message)}</div>`; return; }
+    if (o.key) {
+      history.replaceState(null, "", "account.html");
+      ME = await api("/v1/web/me"); logged();
+      $("#pedido").innerHTML = `<div class="msg ok"><b>Payment approved! 🎉</b> Your key is below.</div>`;
+      return;
+    }
+    if (["rejected", "cancelled", "valor_errado"].includes(o.status)) { box.innerHTML = `<div class="msg bad">The payment was not approved. You can try again.</div>`; return; }
+    box.innerHTML = `<div class="msg"><span class="spin"></span>${o.status === "pending" || o.status === "in_process" ? "Waiting for payment confirmation. Cards and Pix are quick; boleto can take up to 3 business days." : "Confirming the payment…"}</div>`;
+    await new Promise(r => setTimeout(r, i < 20 ? 3000 : 10000));
+  }
+}
+
+$("#sair").onclick = e => { e.preventDefault(); store.set(""); ID = ""; ME = null; try { google.accounts.id.disableAutoSelect(); } catch {} login(); };
+start();
+</script>
+</body>
+</html>
