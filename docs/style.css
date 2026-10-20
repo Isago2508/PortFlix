@@ -69,3 +69,5 @@ a.plan .btn{justify-content:center;margin-top:8px}a.plan ul{flex:1}
 .badge{position:absolute;top:-12px;right:20px;background:#2ecc71;color:#06210f;font-weight:800;font-size:12px;padding:4px 10px;border-radius:999px;letter-spacing:.04em}
 a.plan:hover{border-color:#3a434c;box-shadow:0 20px 50px rgba(0,0,0,.35)}a.plan.pro:hover{border-color:var(--acc)}a.plan.best:hover{border-color:#2ecc71}
 .lang{font-weight:700!important;color:var(--tx)!important;border:1px solid var(--line);border-radius:8px;padding:4px 10px}
+html[data-lang=en] [data-l=pt],html:not([data-lang=en]) [data-l=en]{display:none!important}
+button.lang{background:transparent;cursor:pointer;font:inherit;font-size:14px}

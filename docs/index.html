@@ -7,9 +7,6 @@
 <meta name="description" content="PortFlix reúne todos os ports de jogos para PC feitos por fãs (recomps, decomps, Ship of Harkinian, Zelda64Recomp, sm64, Unleashed Recompiled) e avisa quando sai port novo. Grátis para Windows e Linux.">
 <meta name="keywords" content="ports para pc, novos ports de jogos, recomp, decomp, recompilação estática, ship of harkinian, zelda64recomp, sm64 pc, unleashed recompiled, ports n64 pc, ports xbox 360 pc, steam deck, linux, portflix">
 <link rel="canonical" href="https://isago2508.github.io/PortFlix/">
-<link rel="alternate" hreflang="pt-BR" href="https://isago2508.github.io/PortFlix/">
-<link rel="alternate" hreflang="en" href="https://isago2508.github.io/PortFlix/en/">
-<link rel="alternate" hreflang="x-default" href="https://isago2508.github.io/PortFlix/">
 <link rel="icon" href="icone.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="PortFlix: todos os ports de jogos para PC num lugar só">
@@ -20,7 +17,12 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
+<script>
+// idioma: escolhido antes > ?lang= > idioma do navegador
+(function(){ var q=new URLSearchParams(location.search).get("lang"), s=null; try{ s=localStorage.getItem("pf_lang"); }catch(e){}
+  var l=q||s||((navigator.language||"pt").toLowerCase().startsWith("pt")?"pt":"en"); document.documentElement.dataset.lang=(l==="en"?"en":"pt"); })();
+</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"PortFlix","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11, Linux","inLanguage":"pt-BR","url":"https://isago2508.github.io/PortFlix/","image":"https://isago2508.github.io/PortFlix/biblioteca-escuro.png","description":"Catálogo de ports, recompilações e decompilações de jogos para PC feitos por fãs, com avisos de lançamento.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"BRL"},{"@type":"Offer","name":"PRO vitalício (1 PC)","price":"30.00","priceCurrency":"BRL"},{"@type":"Offer","name":"PRO vitalício (2 PCs)","price":"50.00","priceCurrency":"BRL"}]}
 </script>
@@ -35,18 +37,28 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="logo" href="./"><img src="icone.png" alt=""><span>PORT<b>FLIX</b></span></a>
-  <nav class="links">
+  <nav class="links" data-l="pt">
     <a class="hide" href="#funcoes">Funções</a>
     <a class="hide" href="#precos">Preços</a>
     <a class="hide" href="#duvidas">Dúvidas</a>
     <a class="hide" href="https://wa.me/5548988516188" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="hide" href="https://discord.gg/XusPwTQ6X" target="_blank" rel="noopener" title="Em construção / Work in progress">Discord 🚧</a>
     <a href="conta.html">Minha conta</a>
-    <a class="lang" href="en/" hreflang="en" title="English">🇺🇸 EN</a>
     <a class="btn pri sm" href="#baixar">Baixar grátis</a>
   </nav>
+  <nav class="links" data-l="en">
+    <a class="hide" href="#features">Features</a>
+    <a class="hide" href="#pricing">Pricing</a>
+    <a class="hide" href="#faq">FAQ</a>
+    <a class="hide" href="https://wa.me/5548988516188" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="hide" href="https://discord.gg/XusPwTQ6X" target="_blank" rel="noopener" title="Em construção / Work in progress">Discord 🚧</a>
+    <a href="conta.html">My account</a>
+    <a class="btn pri sm" href="#download">Free download</a>
+  </nav>
+  <button class="lang" id="langBtn" type="button" title="Mudar idioma / Change language"><span data-l="pt">🇺🇸 EN</span><span data-l="en">🇧🇷 PT</span></button>
 </div></header>
 
-<main>
+<main data-l="pt">
 <div class="hero"><div class="wrap">
   <h1>Todos os <span>ports de jogos para PC</span><br>num lugar só</h1>
   <p class="lead">O PortFlix acompanha os ports, recompilações e decompilações feitos por fãs e avisa quando sai um port novo. Zelda, Mario, Sonic, Perfect Dark e muito mais rodando nativo no seu PC.</p>
@@ -114,17 +126,103 @@
   <details><summary>O PortFlix vem com os jogos?</summary><p>Não. O PortFlix não inclui nem distribui ROMs ou ISOs. Os ports pedem a sua própria cópia original, e cada projeto mostra o autor e o link oficial.</p></details>
   <details><summary>Como recebo a chave do PRO?</summary><p>Entre em <a href="conta.html">Minha conta</a> com o Google, pague pelo Mercado Pago e a chave aparece na hora, ali mesmo. Ela fica salva na sua conta.</p></details>
   <details><summary>Posso pagar com Pix pelo WhatsApp?</summary><p>Pode. Chame no <a href="https://wa.me/5548988516188?text=Ol%C3%A1%21%20Quero%20comprar%20o%20PortFlix%20PRO%20vital%C3%ADcio%20pagando%20com%20Pix.%20Plano%3A%20%281%20PC%20R%24%2030%20/%202%20PCs%20R%24%2050%29.%20Meu%20e-mail%20do%20PortFlix%20%C3%A9%3A%20" target="_blank" rel="noopener">WhatsApp (48) 98851-6188</a> e informe o e-mail que você vai usar no PortFlix. Você recebe a chave Pix e, depois do comprovante, a sua chave do PRO.</p></details>
-  <details><summary>Como falo com o suporte?</summary><p>WhatsApp <a href="https://wa.me/5548988516188" target="_blank" rel="noopener">(48) 98851-6188</a> ou e-mail <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</p></details>
+  <details><summary>Como falo com o suporte?</summary><p><a href="https://discord.gg/XusPwTQ6X" target="_blank" rel="noopener">Discord da comunidade</a> (ainda em construção), WhatsApp <a href="https://wa.me/5548988516188" target="_blank" rel="noopener">(48) 98851-6188</a> ou e-mail <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</p></details>
   <details><summary>Como ativo o PRO?</summary><p>No PortFlix, clique em <b>Ativar PRO</b>, entre com a mesma conta Google usada na compra e cole a chave.</p></details>
-  <details><summary>Onde vejo as novidades de cada versão?</summary><p>No <a href="https://github.com/Isago2508/PortFlix/blob/main/CHANGELOG.pt-BR.md">histórico de novidades (CHANGELOG)</a>. O PortFlix também avisa sozinho quando sai versão nova, em Configurações → Atualizações.</p></details>
+  <details><summary>Onde vejo as novidades de cada versão?</summary><p>No <a href="https://github.com/Isago2508/PortFlix/blob/main/CHANGELOG.md">histórico de novidades (CHANGELOG)</a>. O PortFlix também avisa sozinho quando sai versão nova, em Configurações → Atualizações.</p></details>
   <details><summary>Funciona no Linux e no Steam Deck?</summary><p>Sim. Há versões para Linux x86_64 (a maioria dos PCs e o Steam Deck) e ARM64.</p></details>
   <details><summary>Apareceu "O Windows protegeu o computador"</summary><p>Clique em <b>Mais informações → Executar assim mesmo</b>. O aviso aparece porque o programa é novo e ainda não tem assinatura digital.</p></details>
 </div></section>
 </main>
+<main data-l="en">
+<div class="hero"><div class="wrap">
+  <h1>Every <span>PC game port</span><br>in one place</h1>
+  <p class="lead">PortFlix follows the fan-made ports, recompilations and decompilations and tells you when a new port is out. Zelda, Mario, Sonic, Perfect Dark and much more running natively on your PC.</p>
+  <div class="cta" id="download">
+    <a class="btn pri" href="https://github.com/Isago2508/PortFlix/releases/latest/download/PortFlix-Setup.exe">⬇ Download for Windows</a>
+    <a class="btn" href="https://github.com/Isago2508/PortFlix/releases/latest/download/PortFlix-Linux-x86_64.tar.gz">🐧 Download for Linux</a>
+  </div>
+  <p class="small">Free · Windows 10/11 and Linux (including Steam Deck) · <a href="https://github.com/Isago2508/PortFlix/releases/latest">all versions</a> · the app interface is in Brazilian Portuguese</p>
+  <div class="shot"><img src="biblioteca-escuro.png" alt="PortFlix library with Zelda, Sonic Unleashed, Super Mario 64 and Perfect Dark ports" width="1920" height="1170"></div>
+  <div class="tags">
+    <span class="tag">Ship of Harkinian</span><span class="tag">Zelda64Recomp</span><span class="tag">2 Ship 2 Harkinian</span><span class="tag">sm64ex</span><span class="tag">Unleashed Recompiled</span><span class="tag">Perfect Dark PC</span><span class="tag">Starship</span><span class="tag">Xbox 360 recomps</span><span class="tag">N64 and GameCube decomps</span>
+  </div>
+</div></div>
 
-<footer><div class="wrap">
+<section id="features"><div class="wrap">
+  <h2>Made for those who don't want to miss a single port</h2>
+  <p class="sub">Ports are released all over GitHub, Reddit and Discord. PortFlix brings everything together and lets you know.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">🔔</div><h3>New port alerts</h3><p>A new version or a brand-new port? You get notified, even with the app minimized to the tray.</p></div>
+    <div class="card"><div class="ico">🔄</div><h3>Self-updating catalog</h3><p>Scans GitHub and community lists and organizes by console: N64, GameCube, PS2, Xbox 360 and more.</p></div>
+    <div class="card"><div class="ico">🖼️</div><h3>Automatic covers</h3><p>Every game gets its cover. View as grid, list or covers only, at the size you like.</p></div>
+    <div class="card"><div class="ico">🎮</div><h3>My games</h3><p>Your installed ports in one place. Launch them right from PortFlix, like a game store.</p></div>
+    <div class="card"><div class="ico">⬇️</div><h3>Download inside the app <small>PRO</small></h3><p>Download and extract with a progress bar, without hunting for the right file on the project page.</p></div>
+    <div class="card"><div class="ico">🤖</div><h3>AI Assistant <small>PRO</small></h3><p>Ask which port needs which file, how to set it up or what's new.</p></div>
+    <div class="card"><div class="ico">📺</div><h3>TV Mode <small>PRO</small></h3><p>Big Picture style full screen, navigable with a controller. Perfect for the TV or the Steam Deck.</p></div>
+    <div class="card"><div class="ico">⏱️</div><h3>Play time and lists <small>PRO</small></h3><p>Favorites, "Want to play", "Playing now", "Finished" and how long you played each port.</p></div>
+    <div class="card"><div class="ico">🔁</div><h3>Your PCs in sync <small>PRO</small></h3><p>Same favorites, lists and play time on your PCs. Export your library to format without losing anything.</p></div>
+    <div class="card"><div class="ico">💾</div><h3>USB drive (technician mode) <small>PRO</small></h3><p>Copy your ports to a USB drive and install them on another PC without downloading again.</p></div>
+    <div class="card"><div class="ico">🆕</div><h3>Always up to date</h3><p>PortFlix itself tells you when a new version is out and updates with 1 click.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>Your way</h2>
+  <p class="sub">Light or dark theme and, with PRO, red, pink, purple, blue and neon colors.</p>
+  <div class="gal">
+    <figure><img src="biblioteca-claro.png" alt="PortFlix with light theme" loading="lazy"><figcaption>Light theme</figcaption></figure>
+    <figure><img src="lista.png" alt="PortFlix in list view with the neon color" loading="lazy"><figcaption>List view · Neon color</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2>Pricing</h2>
+  <p class="sub">It's the same app: it opens as Free and becomes PRO when you activate a key. Prices in Brazilian reais (R$).</p>
+  <div class="plans">
+    <a class="plan" href="#download"><h3>Free</h3><div class="price">R$ 0</div><div class="small">forever</div>
+      <ul><li>Full catalog (updates once a day)</li><li>New port alerts (24 h later)</li><li>Automatic covers and view modes</li><li>My games (up to 5)</li><li>Light and dark themes</li><li class="no">Download inside the app</li><li class="no">TV Mode, lists and play time</li><li class="no">AI Assistant</li></ul>
+      <span class="btn">Free download</span></a>
+    <a class="plan pro" href="conta.html?pcs=1"><h3>PRO · 1 PC</h3><div class="price">R$ 30 <small>one-time</small></div><div class="small">lifetime · activates on 1 PC</div>
+      <ul><li>Everything in Free, no limits</li><li>Instant new port alerts</li><li>Download and extract inside the app</li><li>TV Mode with controller</li><li>Favorites, lists and play time</li><li>Game page with screenshots and news</li><li>Free AI Assistant</li><li>Sync PCs, export and USB drive</li><li>Filters, manual covers and exclusive colors</li></ul>
+      <span class="btn pri">Buy on the website</span>
+      <span class="btn wa" onclick="event.preventDefault();event.stopPropagation();window.open('https://wa.me/5548988516188?text=Hi%21%20I%20want%20to%20buy%20PortFlix%20PRO%20lifetime%20%281%20PC%20R%24%2030%29.%20My%20PortFlix%20e-mail%20is%3A%20','_blank')">💬 Buy via WhatsApp</span>
+      <p class="small">Mercado Pago with the key delivered instantly, or talk to us on WhatsApp.</p></a>
+    <a class="plan pro best" href="conta.html?pcs=2"><span class="badge">Best value</span><h3>PRO · 2 PCs</h3><div class="price">R$ 50 <small>one-time</small></div><div class="small">lifetime · activates on 2 PCs</div>
+      <ul><li>Everything in Free, no limits</li><li>Instant new port alerts</li><li>Download and extract inside the app</li><li>TV Mode with controller</li><li>Favorites, lists and play time</li><li>Game page with screenshots and news</li><li>Free AI Assistant</li><li>Sync PCs, export and USB drive</li><li>Filters, manual covers and exclusive colors</li></ul>
+      <span class="btn pri">Buy on the website</span>
+      <span class="btn wa" onclick="event.preventDefault();event.stopPropagation();window.open('https://wa.me/5548988516188?text=Hi%21%20I%20want%20to%20buy%20PortFlix%20PRO%20lifetime%20%282%20PCs%20R%24%2050%29.%20My%20PortFlix%20e-mail%20is%3A%20','_blank')">💬 Buy via WhatsApp</span>
+      <p class="small">Mercado Pago with the key delivered instantly, or talk to us on WhatsApp.</p></a>
+  </div>
+</div></section>
+
+<section id="faq" class="alt"><div class="wrap">
+  <h2>FAQ</h2>
+  <details><summary>What is a port, recomp or decomp?</summary><p>They are fan projects that make console games run natively on PC, with widescreen, 60 FPS or more and mods. A <b>decomp</b> recreates the game's source code, a <b>recomp</b> converts the game straight to PC and a <b>port</b> adapts the game to run without an emulator.</p></details>
+  <details><summary>Does PortFlix come with games?</summary><p>No. PortFlix does not include or distribute ROMs or ISOs. Ports require your own original copy, and every project shows its author and official link.</p></details>
+  <details><summary>Is the app in English?</summary><p>The app interface is currently in Brazilian Portuguese. The catalog, game names and project pages are the originals from GitHub, so most of the content is in English anyway.</p></details>
+  <details><summary>How do I get my PRO key?</summary><p>Go to <a href="conta.html">My account</a>, sign in with Google, pay with Mercado Pago and the key shows up right there. It stays saved in your account.</p></details>
+  <details><summary>I can't pay with Mercado Pago. What now?</summary><p>Message us on <a href="https://wa.me/5548988516188?text=Hi%21%20I%20want%20to%20buy%20PortFlix%20PRO.%20My%20PortFlix%20e-mail%20is%3A%20" target="_blank" rel="noopener">WhatsApp +55 48 98851-6188</a> or e-mail <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a> with the e-mail you'll use in PortFlix and we'll find another way.</p></details>
+  <details><summary>Where can I get help?</summary><p>Join our <a href="https://discord.gg/XusPwTQ6X" target="_blank" rel="noopener">Discord community</a> (still a work in progress), message us on <a href="https://wa.me/5548988516188" target="_blank" rel="noopener">WhatsApp +55 48 98851-6188</a> or e-mail <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a>.</p></details>
+  <details><summary>How do I activate PRO?</summary><p>In PortFlix, click <b>Ativar PRO</b>, sign in with the same Google account used for the purchase and paste the key.</p></details>
+  <details><summary>Where can I see what's new in each version?</summary><p>In the <a href="https://github.com/Isago2508/PortFlix/blob/main/CHANGELOG.md">CHANGELOG</a>. PortFlix also tells you by itself when a new version is out, in Settings → Updates.</p></details>
+  <details><summary>Does it work on Linux and Steam Deck?</summary><p>Yes. There are Linux versions for x86_64 (most PCs and the Steam Deck) and ARM64.</p></details>
+  <details><summary>"Windows protected your PC" showed up</summary><p>Click <b>More info → Run anyway</b>. The warning appears because the program is new and doesn't have a digital signature yet.</p></details>
+</div></section>
+</main>
+
+<footer data-l="pt"><div class="wrap">
   <span>© 2026 PortFlix · os ports pertencem aos seus criadores</span>
-  <span><a href="https://portsradar-licencas.portsradar-hugo.workers.dev/privacidade">Privacidade</a> · <a href="https://portsradar-licencas.portsradar-hugo.workers.dev/termos">Termos</a> · <a href="https://github.com/Isago2508/PortFlix">GitHub</a> · <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a> · <a href="https://wa.me/5548988516188" target="_blank" rel="noopener">WhatsApp (48) 98851-6188</a></span>
+  <span><a href="https://portsradar-licencas.portsradar-hugo.workers.dev/privacidade">Privacidade</a> · <a href="https://portsradar-licencas.portsradar-hugo.workers.dev/termos">Termos</a> · <a href="https://github.com/Isago2508/PortFlix">GitHub</a> · <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a> · <a href="https://wa.me/5548988516188" target="_blank" rel="noopener">WhatsApp (48) 98851-6188</a> · <a href="https://discord.gg/XusPwTQ6X" target="_blank" rel="noopener">Discord (em construção)</a></span>
 </div></footer>
+<footer data-l="en"><div class="wrap">
+  <span>© 2026 PortFlix · ports belong to their creators</span>
+  <span><a href="https://portsradar-licencas.portsradar-hugo.workers.dev/privacidade">Privacy</a> · <a href="https://portsradar-licencas.portsradar-hugo.workers.dev/termos">Terms</a> · <a href="https://github.com/Isago2508/PortFlix">GitHub</a> · <a href="mailto:hugofernandes30@gmail.com">hugofernandes30@gmail.com</a> · <a href="https://wa.me/5548988516188" target="_blank" rel="noopener">WhatsApp +55 48 98851-6188</a> · <a href="https://discord.gg/XusPwTQ6X" target="_blank" rel="noopener">Discord (work in progress)</a></span>
+</div></footer>
+<script>
+const TITLES={pt:document.title,en:"PortFlix: new fan-made PC ports, recomps and decomps"};
+function setLang(l){ document.documentElement.dataset.lang=l; document.documentElement.lang=l==="en"?"en":"pt-BR"; document.title=TITLES[l]; try{ localStorage.setItem("pf_lang",l); }catch(e){} }
+setLang(document.documentElement.dataset.lang);
+document.getElementById("langBtn").onclick=()=>setLang(document.documentElement.dataset.lang==="en"?"pt":"en");
+</script>
 </body>
 </html>
