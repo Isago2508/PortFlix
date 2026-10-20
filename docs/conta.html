@@ -44,7 +44,8 @@ let PUB = {}, ID = "", ME = null;
 const store = { get(){ try { return sessionStorage.getItem("pf_id") || ""; } catch { return ""; } }, set(v){ try { v ? sessionStorage.setItem("pf_id", v) : sessionStorage.removeItem("pf_id"); } catch {} } };
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const WA = "https://wa.me/5548988516188";
-const waLink = email => WA + "?text=" + encodeURIComponent("Olá! Quero comprar o PortFlix PRO vitalício pagando com Pix. Plano: (1 PC R$ 30 / 2 PCs R$ 50). Meu e-mail do PortFlix é: " + (email || ""));
+const selPlan = () => { const pcs = Number(document.querySelector('input[name=pcs]:checked')?.value || q.get("pcs") || 1); return PLANS().find(p => p.pcs === pcs) || PLANS()[0]; };
+const waLink = email => { const p = selPlan(); return WA + "?text=" + encodeURIComponent(`Olá! Quero comprar o PortFlix PRO vitalício para ${p.pcs} ${p.pcs > 1 ? "PCs" : "PC"} (${brl(p.price)}) pagando com Pix. Meu e-mail do PortFlix é: ` + (email || "")); };
 const PLANS = () => (ME && ME.plans) || PUB.plans || [{ pcs: 1, price: 30 }, { pcs: 2, price: 50 }];
 const brl = n => Number(n).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
@@ -119,6 +120,8 @@ function logged() {
       <p class="small">${ME.buyOnline ? "<b>Comprar agora:</b> Mercado Pago (Pix, cartão ou boleto), a chave aparece aqui na hora.<br>" : ""}<b>Pix pelo WhatsApp:</b> você recebe a chave Pix, manda o comprovante e a sua chave do PRO aparece aqui nesta página.</p>
     </div>`);
   if ($("#buy")) $("#buy").onclick = buy;
+  const wa = document.querySelector("a.btn.wa");
+  document.querySelectorAll('input[name=pcs]').forEach(r => r.onchange = () => { if (wa) wa.href = waLink(w.email); });
   if (q.get("pedido")) watchOrder(q.get("pedido"));
 }
 
@@ -158,7 +161,8 @@ let PUB = {}, ID = "", ME = null;
 const store = { get(){ try { return sessionStorage.getItem("pf_id") || ""; } catch { return ""; } }, set(v){ try { v ? sessionStorage.setItem("pf_id", v) : sessionStorage.removeItem("pf_id"); } catch {} } };
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const WA = "https://wa.me/5548988516188";
-const waLink = email => WA + "?text=" + encodeURIComponent("Hi! I want to buy PortFlix PRO lifetime. Plan: (1 PC R$ 30 / 2 PCs R$ 50). My PortFlix e-mail is: " + (email || ""));
+const selPlan = () => { const pcs = Number(document.querySelector('input[name=pcs]:checked')?.value || q.get("pcs") || 1); return PLANS().find(p => p.pcs === pcs) || PLANS()[0]; };
+const waLink = email => { const p = selPlan(); return WA + "?text=" + encodeURIComponent(`Hi! I want to buy PortFlix PRO lifetime for ${p.pcs} ${p.pcs > 1 ? "PCs" : "PC"} (${brl(p.price)}). My PortFlix e-mail is: ` + (email || "")); };
 const PLANS = () => (ME && ME.plans) || PUB.plans || [{ pcs: 1, price: 30 }, { pcs: 2, price: 50 }];
 const brl = n => Number(n).toLocaleString("en-US", { style: "currency", currency: "BRL" });
 
@@ -233,6 +237,8 @@ function logged() {
       <p class="small">${ME.buyOnline ? "<b>Buy now:</b> Mercado Pago, the key shows up here instantly.<br>" : ""}<b>WhatsApp:</b> talk to us to pay another way; your PRO key will show up on this page.</p>
     </div>`);
   if ($("#buy")) $("#buy").onclick = buy;
+  const wa = document.querySelector("a.btn.wa");
+  document.querySelectorAll('input[name=pcs]').forEach(r => r.onchange = () => { if (wa) wa.href = waLink(w.email); });
   if (q.get("pedido")) watchOrder(q.get("pedido"));
 }
 
