@@ -5,30 +5,73 @@
 
 ### 1.3.0 (19/10/2026)
 
-**Assistente**
-- Responde "o que vai sair?": mostra os ports, recomps e decomps em andamento (ainda sem versão ou em teste) e os projetos novos e ativos no GitHub, com link e última atividade, e oferece colocar no radar.
-- Pesquisa direto, sem perguntar, e não mostra mais comandos internos na resposta.
+#### 🎮 Controle no estilo da Steam: nova aba Configurações → Controle
+- **Controles conectados:** mostra o nome de cada controle, o tipo reconhecido (Xbox, PlayStation ou Nintendo), quantos botões ele tem e se ele vibra. Quando você conecta um controle, aparece um aviso na tela.
+- **Teste ao vivo:** cada botão acende na tela quando é apertado, e os dois analógicos mostram a posição em tempo real, com o círculo da zona morta desenhado.
+- **Estilo dos botões na tela:** Automático (reconhece pelo controle), Xbox (A, B, X, Y), PlayStation (✕, ○, □, △) ou Nintendo (B, A, Y, X).
+- **Trocar Confirmar e Voltar**, do jeito dos consoles da Nintendo.
+- **Remapear cada ação:** Confirmar/abrir, Voltar/fechar, Página do jogo, Fileira de cima, Fileira de baixo, Sair do Modo TV e Abrir o Modo TV. Clique em **Mudar** e aperte o botão que quiser.
+- **Zona morta do analógico** ajustável, de 15% a 85%.
+- **Velocidade de navegação** ajustável, de 0,5x a 2x.
+- **Vibração** leve ao navegar (pode desligar) e botão **Testar vibração**.
+- **Restaurar o padrão** volta todos os botões e ajustes.
+- As mudanças valem na hora, sem precisar clicar em Salvar.
+- Funciona com controles USB e Bluetooth de Xbox, PlayStation, Nintendo e genéricos.
 
-**Avisos**
-- Clicar no aviso de **projeto novo** ou **versão nova** abre a página do projeto no GitHub, sempre com uma janela perguntando antes de abrir o site. Quando são vários projetos, aparece a lista para escolher.
+#### 📺 Modo TV (PRO)
+- Apertar **Menu / Options / +** no controle abre o Modo TV de qualquer tela. Dá para desligar em Configurações → Controle.
+- **Y / △** abre a página do jogo selecionado.
+- **LB / RB** (L1 / R1) pulam para a fileira de cima ou de baixo.
+- Dá para navegar e confirmar com o controle dentro das janelas que abrem por cima do Modo TV, como a página do jogo e os avisos.
+- As dicas no topo mostram os botões do **seu** controle, por exemplo "✕ abrir · ○ voltar · △ detalhes".
 
-**Linux**
-- **Instalador gráfico** igual ao do Windows: escolha da pasta, atalho no menu de aplicativos e na área de trabalho, atualizar, reinstalar do zero ou desinstalar.
-- Ao atualizar, o instalador fecha o PortFlix aberto (antes a versão antiga continuava rodando).
-- O `instalar.sh` funciona também a partir de HD externo, pendrive ou partição do Windows.
-- "Desinstalar o PortFlix" no menu do botão direito do atalho.
-- O PortFlix DEV traz sozinho os avisos e a biblioteca da pasta antiga.
+#### ⬆️ Atualizar pelo próprio PortFlix
+- Novo botão **Instalar atualização** em Configurações → Atualizações: baixa e instala a versão nova sem abrir o navegador, com barra de progresso (que também aparece na barra de atividade, embaixo).
+- **Windows:** o instalador roda em segundo plano, sem janelas. Ele atualiza a pasta onde o PortFlix já está e mantém os atalhos da Área de Trabalho e do Menu Iniciar. Capas, downloads e dados não são mexidos.
+- **Linux:** o programa é trocado no mesmo lugar.
+- No final aparece a janela **Atualização pronta**, com duas opções:
+  - **Reiniciar agora:** fecha o PortFlix e abre de novo, já na versão nova.
+  - **Atualizar depois:** você continua usando, e a versão nova vale na próxima vez que abrir o PortFlix. Enquanto isso, o botão do topo vira **⟳ Reiniciar**.
+- Os botões **Baixar pelo GitHub** e **Abrir o site** continuam lá, para quem preferir baixar na mão.
+- Se o arquivo da sua edição não estiver na versão publicada no GitHub, o app avisa e mostra as outras opções.
+- PortFlix usado sem instalar (só o .exe) no Windows: abre o instalador normal.
 
-**Controle (estilo Steam)**
-- Nova aba **Configurações → Controle**: controles conectados, teste ao vivo dos botões e analógicos, estilo dos botões na tela (Xbox, PlayStation ou Nintendo, ou automático), trocar confirmar e voltar, **remapear** cada ação, zona morta, velocidade de navegação, vibração e teste de vibração.
-- Aperte **Menu/Options/+** no controle para abrir o Modo TV de qualquer lugar.
-- No Modo TV: botão para a página do jogo, botões de ombro pulam de fileira, navegação dentro das janelas e dicas com os botões do seu controle.
+#### 🤖 Assistente
+- Nova busca de **projetos em andamento**. Ela junta:
+  - os ports, recomps e decomps do catálogo que ainda não lançaram versão ou que estão em teste (alpha, beta, RC, versões 0.x);
+  - os repositórios ativos no GitHub nos últimos 3 meses (com 5 estrelas ou mais) que ainda não estão no catálogo.
+- Perguntas como **"o que vai sair?"**, **"o que está para lançar?"** ou **"quais projetos estão em andamento?"** são respondidas com uma lista: jogo, projeto, situação (sem versão ainda, em teste ou ativo), última atividade e link do GitHub. O assistente também procura notícias na web.
+- Ele avisa que projetos de fãs não têm data de lançamento garantida e oferece colocar no radar os projetos que ainda não estão no catálogo.
+- O assistente agora pesquisa direto, sem perguntar "deseja que eu pesquise?", e não mostra mais nomes de comandos internos na resposta (como `search_catalog query=...`).
 
-**Atualizações**
-- **Instalar atualização** direto na aba Configurações → Atualizações, no Windows e no Linux, sem abrir o navegador. No final, uma janela pergunta se quer **reiniciar agora** ou **atualizar depois** (vale na próxima vez que abrir). Continuam as opções de baixar pelo GitHub ou pelo site.
+#### 🔔 Avisos
+- Clicar no aviso de **projeto novo no radar** abre a página do projeto no GitHub. Se o aviso tiver vários projetos, aparece uma lista para escolher qual abrir, e o botão **Ver no catálogo**.
+- Clicar no aviso de **versão nova** de um jogo ou software abre a página daquela versão no GitHub.
+- Antes de abrir qualquer site, aparece a janela **Abrir site externo?** com o endereço completo, para confirmar ou cancelar.
+- Os avisos de atualização dos seus jogos e do próprio PortFlix continuam levando para Meus jogos e para Configurações → Atualizações.
 
-**Comunidade**
-- Discord (em construção), WhatsApp e site em **Configurações → Atualizações → Ajuda e comunidade**.
+#### 🐧 Linux
+- **Instalador gráfico** com as mesmas telas do instalador do Windows: boas-vindas, termos de uso, pasta, instalação e concluído.
+  - Escolha da pasta (padrão: `~/.local/share/PortFlix`).
+  - Atalho no menu de aplicativos (categoria Jogos) e na área de trabalho, cada um com a sua opção.
+  - Opção de abrir o PortFlix ao terminar.
+- Se o PortFlix já estiver instalado, o instalador mostra a versão e oferece **Atualizar**, **Reinstalar do zero** ou **Desinstalar**.
+- Ao atualizar, o instalador fecha o PortFlix aberto. Isso corrige o caso em que a versão antiga continuava aparecendo depois da atualização.
+- O `instalar.sh` funciona também a partir de HD externo, pendrive ou partição do Windows (NTFS ou exFAT): ele copia o programa para uma pasta temporária e roda de lá.
+- Sem tela gráfica (por exemplo, por SSH), a instalação continua pelo terminal.
+- **Desinstalar o PortFlix** aparece no menu do botão direito do atalho do PortFlix.
+- O **PortFlix DEV** tem pasta própria e abre ao mesmo tempo que o PortFlix normal, cada um na sua janela e com a sua conta. Na primeira vez, ele traz os avisos, a biblioteca e o catálogo da pasta antiga.
+- **Reiniciar** pelo app (depois de atualizar) fecha a janela antiga e abre a nova.
+
+#### 💬 Comunidade e contato
+- Nova seção **Ajuda e comunidade** em Configurações → Atualizações, com botões para o **Discord** (em construção), o **WhatsApp**, o **site** e o **histórico de novidades**.
+- O Discord também foi adicionado ao LEIA-ME, ao README, ao site e às páginas de privacidade e de termos.
+
+#### 🌐 Site e GitHub
+- O site agora tem um **botão de idioma (PT / EN)** no mesmo endereço, e a página **Minha conta** também troca de idioma.
+- **Preços** com três cartões clicáveis: Free, PRO 1 PC (R$ 30) e PRO 2 PCs (R$ 50), todos vitalícios com pagamento único.
+- Compra pelo **Mercado Pago**, com a chave aparecendo na hora em Minha conta, ou **Pix pelo WhatsApp**.
+- README e CHANGELOG em português e inglês na mesma página.
 
 ### 1.2.0 (19/10/2026)
 
@@ -71,30 +114,73 @@
 
 ### 1.3.0 (2026-10-19)
 
-**Assistant**
-- Answers "what's coming?": shows ports, recomps and decomps in progress (no release yet or in testing) and new active projects on GitHub, with link and last activity, and offers to add them to the radar.
-- Searches right away without asking, and no longer shows internal commands in replies.
+#### 🎮 Steam-style controller settings: new Settings → Controller tab
+- **Connected controllers:** shows each controller's name, the detected type (Xbox, PlayStation or Nintendo), how many buttons it has and whether it vibrates. A notice appears on screen when you plug in a controller.
+- **Live test:** every button lights up on screen when pressed, and both sticks show their position in real time, with the dead zone circle drawn.
+- **On-screen button style:** Automatic (detected from the controller), Xbox (A, B, X, Y), PlayStation (✕, ○, □, △) or Nintendo (B, A, Y, X).
+- **Swap Confirm and Back**, the Nintendo way.
+- **Remap every action:** Confirm/open, Back/close, Game page, Row up, Row down, Exit TV Mode and Open TV Mode. Click **Mudar** (Change) and press the button you want.
+- Adjustable **stick dead zone**, from 15% to 85%.
+- Adjustable **navigation speed**, from 0.5x to 2x.
+- Light **vibration** while navigating (can be turned off) and a **Test vibration** button.
+- **Restore defaults** resets all buttons and settings.
+- Changes apply instantly, no need to click Save.
+- Works with USB and Bluetooth Xbox, PlayStation, Nintendo and generic controllers.
 
-**Alerts**
-- Clicking a **new project** or **new version** alert opens the project page on GitHub, always with a window asking before opening the site. When there are several projects, a list lets you choose.
+#### 📺 TV Mode (PRO)
+- Pressing **Menu / Options / +** on the controller opens TV Mode from any screen. You can turn this off in Settings → Controller.
+- **Y / △** opens the selected game's page.
+- **LB / RB** (L1 / R1) jump to the row above or below.
+- You can navigate and confirm with the controller inside the windows that open over TV Mode, such as the game page and alerts.
+- The hints at the top show **your** controller's buttons, e.g. "✕ open · ○ back · △ details".
 
-**Linux**
-- **Graphical installer** like the Windows one: folder choice, app menu and desktop shortcuts, update, clean reinstall or uninstall.
-- When updating, the installer closes the running PortFlix (the old version used to keep running).
-- `instalar.sh` also works from external drives, USB sticks and Windows partitions.
-- "Desinstalar o PortFlix" in the shortcut's right-click menu.
-- PortFlix DEV brings back alerts and library from the old folder by itself.
+#### ⬆️ Update from PortFlix itself
+- New **Install update** button in Settings → Updates: downloads and installs the new version without opening the browser, with a progress bar (also shown in the activity bar at the bottom).
+- **Windows:** the installer runs in the background, with no windows. It updates the folder where PortFlix already is and keeps the Desktop and Start Menu shortcuts. Covers, downloads and data are not touched.
+- **Linux:** the program is replaced in place.
+- At the end, the **Update ready** window offers two options:
+  - **Restart now:** closes PortFlix and opens it again, already on the new version.
+  - **Update later:** keep using it; the new version applies the next time you open PortFlix. Meanwhile, the top button becomes **⟳ Restart**.
+- The **Download from GitHub** and **Open the website** buttons are still there, for those who prefer to download manually.
+- If the file for your edition isn't in the version published on GitHub, the app tells you and shows the other options.
+- PortFlix used without installing (just the .exe) on Windows: opens the regular installer.
 
-**Controller (Steam style)**
-- New **Settings → Controller** tab: connected controllers, live test of buttons and sticks, on-screen button style (Xbox, PlayStation, Nintendo or automatic), swap confirm and back, **remap** every action, dead zone, navigation speed, vibration and vibration test.
-- Press **Menu/Options/+** on the controller to open TV Mode from anywhere.
-- In TV Mode: button for the game page, shoulder buttons jump rows, navigation inside dialogs and hints with your controller's buttons.
+#### 🤖 Assistant
+- New **projects in progress** search. It brings together:
+  - catalog ports, recomps and decomps that haven't released a version yet or are in testing (alpha, beta, RC, 0.x versions);
+  - repositories active on GitHub in the last 3 months (with 5 or more stars) that aren't in the catalog yet.
+- Questions like **"what's coming?"**, **"what's about to be released?"** or **"which projects are in progress?"** are answered with a list: game, project, status (no release yet, in testing or active), last activity and GitHub link. The assistant also searches the web for news.
+- It warns that fan projects have no guaranteed release date and offers to add projects that aren't in the catalog yet to the radar.
+- The assistant now searches right away, without asking "do you want me to search?", and no longer shows internal command names in replies (like `search_catalog query=...`).
 
-**Updates**
-- **Install update** right from Settings → Updates, on Windows and Linux, without opening the browser. At the end, a window asks whether to **restart now** or **update later** (applies next time you open it). Downloading from GitHub or the website is still available.
+#### 🔔 Alerts
+- Clicking a **new project on the radar** alert opens the project page on GitHub. If the alert has several projects, a list lets you choose which one to open, plus a **See in catalog** button.
+- Clicking a **new version** alert for a game or software opens that release's page on GitHub.
+- Before opening any website, an **Open external site?** window shows the full address so you can confirm or cancel.
+- Update alerts for your games and for PortFlix itself still take you to My games and to Settings → Updates.
 
-**Community**
-- Discord (work in progress), WhatsApp and website in **Settings → Updates → Help and community**.
+#### 🐧 Linux
+- **Graphical installer** with the same screens as the Windows installer: welcome, terms of use, folder, installation and done.
+  - Folder choice (default: `~/.local/share/PortFlix`).
+  - App menu shortcut (Games category) and desktop shortcut, each with its own option.
+  - Option to open PortFlix when finished.
+- If PortFlix is already installed, the installer shows the version and offers **Update**, **Clean reinstall** or **Uninstall**.
+- When updating, the installer closes the running PortFlix. This fixes the case where the old version kept showing up after updating.
+- `instalar.sh` also works from external drives, USB sticks and Windows partitions (NTFS or exFAT): it copies the program to a temporary folder and runs it from there.
+- Without a graphical session (e.g. over SSH), installation still works in the terminal.
+- **Desinstalar o PortFlix** (Uninstall) appears in the right-click menu of the PortFlix shortcut.
+- **PortFlix DEV** has its own folder and opens at the same time as regular PortFlix, each in its own window and with its own account. The first time, it brings over alerts, library and catalog from the old folder.
+- **Restarting** from the app (after updating) closes the old window and opens the new one.
+
+#### 💬 Community and contact
+- New **Help and community** section in Settings → Updates, with buttons for **Discord** (work in progress), **WhatsApp**, the **website** and the **changelog**.
+- Discord was also added to the LEIA-ME, the README, the website and the privacy and terms pages.
+
+#### 🌐 Website and GitHub
+- The website now has a **language button (PT / EN)** on the same address, and the **My account** page switches language too.
+- **Pricing** with three clickable cards: Free, PRO 1 PC (R$ 30) and PRO 2 PCs (R$ 50), all lifetime with a one-time payment.
+- Purchase with **Mercado Pago**, with the key showing up instantly in My account, or via **WhatsApp**.
+- README and CHANGELOG in Portuguese and English on the same page.
 
 ### 1.2.0 (2026-10-19)
 
