@@ -3,53 +3,37 @@
 <details open>
 <summary><h2>🇧🇷 Português</h2></summary>
 
-### 1.5.1 (20/10/2026) — Windows e Linux
+> **Sobre as versões:** o número da versão é só uma forma de ajudar na programação e na manutenção constante do software. PC, Linux e Android podem ter números diferentes, e isso não quer dizer que um app seja mais novo ou mais completo que o outro.
 
-- **Emojis no chat de atendimento:** botão 😊 ao lado do campo de mensagem, com seções (rostos, gestos, corações, games, objetos e animados). Mensagem só com 1 a 3 emojis aparece grande e **animada**. Vale para o app (cliente e PortFlix DEV → Atendimento), para o site e para o Android.
-
-### 1.5.2 (20/10/2026) — só Android
-
-- **Emojis no chat** (seletor e emojis animados), como no PC.
-- **Atendimento sem precisar reabrir:** as conversas (no app do cliente e no PortFlix DEV) agora atualizam sozinhas em poucos segundos e ao voltar para o app. Antes, a mensagem nova só aparecia ao fechar e abrir a conversa. A lista de conversas do DEV também atualiza sozinha.
-
-### 1.5.1 (20/10/2026) — só Android
-
-- O app do Android agora tem **versão própria** (1.5.1), separada do PC e do Linux (1.5.0). Arquivos: **PortFlix-1.5.2-Android.apk** e **PortFlix-DEV-1.5.2-Android.apk**.
-- **Correção:** no PortFlix DEV, abrir uma conversa em Atendimento dava o erro "T(...) is not a function". Corrigido.
-- A atualização de um app não oferece mais a release do outro: o PC e o Linux ignoram releases só de Android, e o Android ignora as sem APK.
-
-### 1.5.0 (20/10/2026)
+### 1.5 (20/10/2026): Android, emojis e atendimento
 
 #### 📱 PortFlix para Android (novo)
-- **App novo para celular e tablet Android** (Android 8.0 ou mais novo, aparelhos de 64 bits/ARM64, que são quase todos os atuais). O arquivo é o **PortFlix-1.5.2-Android.apk**.
+- **App para celular e tablet Android** (Android 8.0 ou mais novo, aparelhos de 64 bits/ARM64, que são quase todos os atuais).
 - **Catálogo só de ports para Android:** o app mostra apenas os projetos que publicam APK para Android, como Zelda: Ocarina of Time (Ship of Harkinian), Sonic 3 A.I.R., Banjo: Recompiled, Half-Life (Xash3D), Diablo (DevilutionX), LEGO Island, Fallout CE, OpenMW e outros. A cada versão nova, ele confere se o APK existe mesmo. Projetos sem APK não aparecem.
 - **Telas pensadas para o celular:** Explorar (capas em grade, busca, filtro por console e "Novos"), Favoritos, Downloads, Avisos e Conta, com barra de abas embaixo. A página de cada jogo mostra capa, console, tipo (port, recomp, decomp), autor, versão, data, novidades da versão e o link do GitHub.
-- **Avisos na barra do celular** quando sai port novo ou versão nova. No Free chegam 24 horas depois; no PRO, na hora. Dá para desligar em Conta → Ajustes.
+- **Capas:** as capas dos ports aparecem no app e são buscadas sozinhas (e de novo a cada varredura). Na página do jogo dá para **trocar a capa** (sugestões, outro nome de busca ou link de imagem) ou voltar para a automática.
+- **Versão Free:** dá para usar o catálogo normalmente, de graça: explorar, buscar, filtrar, ver a página de cada jogo, favoritos e avisos (com 24 horas de atraso). O PRO libera o aviso na hora, baixar e instalar pelo app, trocar capas e cor de destaque.
+- **Avisos na barra do celular** quando sai port novo ou versão nova. No Free chegam 24 horas depois; no PRO, na hora.
 - **PRO com a mesma chave do PC:** entre com o mesmo e-mail da compra (Google, Hotmail ou Outlook) e cole a chave. O celular ocupa uma vaga da chave, igual a um PC. Para liberar a vaga, use "Remover a licença deste celular".
 - **PRO: baixar e instalar pelo app.** O APK baixa com barra de progresso e instala com um toque em Instalar. Na primeira vez o Android pede para liberar "instalar apps desconhecidos" para o PortFlix: libere, volte e a instalação continua sozinha. No Free, o Baixar abre a página do download no navegador.
 - **Downloads:** lista dos APKs baixados, com Instalar e Apagar.
-- **Suporte por chat** dentro do app, no mesmo atendimento do site e do PC. A resposta aparece no app e chega como aviso. Também tem atalhos para o site, WhatsApp, Discord (em construção) e GitHub.
-- **Atualização do próprio app:** quando sai versão nova do PortFlix, aparece um aviso no Explorar e em Conta, e o app baixa e abre a instalação da versão nova.
-- **Português e inglês:** segue o idioma do celular, ou escolha em Conta → Ajustes.
-- O botão **Voltar** do Android fecha a tela aberta; na tela inicial, ele minimiza o app.
-- **Capas no Android:** as capas dos ports aparecem no app e são buscadas sozinhas (e de novo a cada varredura). Na página do jogo dá para **trocar a capa** (sugestões, outro nome de busca ou link de imagem) ou voltar para a automática.
 - **Configurações completas:** tema (automático, escuro, claro), cor de destaque e colunas da grade (PRO), idioma, avisos por tipo, varredura automática do catálogo, capas, criadores que sigo, meus projetos, projetos ocultos, **sincronizar com o PC** (favoritos, ocultos, criadores e projetos), pasta de downloads, assistente de IA, perfil, atualizações e ajuda.
-- **PortFlix DEV para Android** (**PortFlix-DEV-1.5.2-Android.apk**, instala ao lado do app normal): atendimento (conversas do site, PC e Android com resposta direta), gerador e lista de licenças (criar, renovar, revogar, liberar aparelho, copiar mensagem, WhatsApp) e o mesmo catálogo do app.
+- **Atualização do próprio app:** quando sai versão nova do PortFlix, aparece um aviso no Explorar e em Conta, e o app baixa e abre a instalação da versão nova.
+- **Português e inglês:** segue o idioma do celular, ou escolha nas Configurações.
+- O botão **Voltar** do Android fecha a tela aberta; na tela inicial, ele minimiza o app.
+- **PortFlix DEV para Android** (instala ao lado do app normal, só para o criador): Atendimento (conversas do site, PC e Android, com resposta direta), gerador e lista de licenças (criar, renovar, revogar, liberar aparelho, copiar mensagem, WhatsApp) e o mesmo catálogo do app.
 - Lembrete: os ports pedem os arquivos do **seu** jogo original. O PortFlix não inclui nem baixa jogos. As capas automáticas podem não bater com o jogo.
+
+#### 💬 Atendimento (PC, Linux, Android e site)
+- **Emojis no chat:** botão 😊 ao lado do campo de mensagem, com seções (rostos, gestos, corações, games, objetos e animados). Mensagem só com 1 a 3 emojis aparece grande e **animada**. Vale para o app do cliente, para o PortFlix DEV → Atendimento, para o site e para o Android.
+- **No Android, a conversa atualiza sozinha** em poucos segundos e ao voltar para o app, sem precisar fechar e abrir a conversa. A lista de conversas do DEV também.
+- As conversas abertas pelo app do Android aparecem no PortFlix DEV → Atendimento com a etiqueta **ANDROID**, e o aviso no Telegram diz que veio do Android.
 
 #### 🌐 Site
 - Fundo novo no topo: parede de capas de ports em perspectiva, radar girando e avisos de ports aparecendo ao vivo nas laterais, mostrando o que o app faz.
 - Texto do topo mais forte e legível, citando God of War III, Bloodborne e Uncharted (ports de PS4), Zelda, Mario, Sonic e Mortal Kombat.
 - Destaque próprio para o aviso de port novo ("Saiu port novo? Você fica sabendo na hora.").
 - Download do **Android** no site.
-
-#### 💬 Atendimento
-- As conversas abertas pelo app do Android aparecem no PortFlix DEV → Atendimento com a etiqueta **ANDROID**, e o aviso no Telegram diz que veio do Android.
-
-#### 🖥️ Windows e Linux
-- Sem mudanças nas funções nesta versão: o número sobe para 1.5.0 para ficar igual em todos os sistemas.
-- Os arquivos da release agora têm a **versão no nome** (ex.: PortFlix-1.5.0-Setup.exe, PortFlix-1.5.0-Linux-x86_64.tar.gz). A atualização pelo app reconhece os nomes novos, e os botões do site sempre apontam para a versão mais nova.
-- Quem está na 1.4: desta vez use **Baixar pelo GitHub** (o "Instalar atualização" da 1.4 procura o nome antigo).
 
 ### 1.4.0 (20/10/2026)
 
@@ -188,53 +172,37 @@
 <details>
 <summary><h2>🇺🇸 English</h2></summary>
 
-### 1.5.1 (2026-10-20) — Windows and Linux
+> **About versions:** the version number is only a way to help with programming and the constant maintenance of the software. PC, Linux and Android may have different numbers, and that doesn't mean one app is newer or more complete than the other.
 
-- **Emojis in the support chat:** a 😊 button next to the message box, with sections (faces, gestures, hearts, games, objects and animated). A message with only 1 to 3 emojis shows big and **animated**. Works in the app (customer and PortFlix DEV → Support), on the website and on Android.
-
-### 1.5.2 (2026-10-20) — Android only
-
-- **Emojis in the chat** (picker and animated emojis), as on PC.
-- **Support without reopening:** conversations (in the customer app and in PortFlix DEV) now refresh by themselves within seconds and when you come back to the app. Before, a new message only showed after closing and reopening the conversation. The DEV conversation list also refreshes by itself.
-
-### 1.5.1 (2026-10-20) — Android only
-
-- The Android app now has **its own version** (1.5.1), separate from PC and Linux (1.5.0). Files: **PortFlix-1.5.2-Android.apk** and **PortFlix-DEV-1.5.2-Android.apk**.
-- **Fix:** in PortFlix DEV, opening a conversation in Support showed the error "T(...) is not a function". Fixed.
-- App updates no longer offer the other app's release: PC and Linux ignore Android-only releases, and Android ignores the ones without an APK.
-
-### 1.5.0 (2026-10-20)
+### 1.5 (2026-10-20): Android, emojis and support
 
 #### 📱 PortFlix for Android (new)
-- **New app for Android phones and tablets** (Android 8.0 or newer, 64-bit/ARM64 devices, which is nearly all current ones). The file is **PortFlix-1.5.2-Android.apk**.
+- **App for Android phones and tablets** (Android 8.0 or newer, 64-bit/ARM64 devices, which is nearly all current ones).
 - **A catalog of Android ports only:** the app shows just the projects that publish an Android APK, such as Zelda: Ocarina of Time (Ship of Harkinian), Sonic 3 A.I.R., Banjo: Recompiled, Half-Life (Xash3D), Diablo (DevilutionX), LEGO Island, Fallout CE, OpenMW and more. On every new version it checks that the APK is really there. Projects without an APK don't show up.
 - **Screens made for phones:** Explore (cover grid, search, console filter and "New"), Favorites, Downloads, Alerts and Account, with a tab bar at the bottom. Each game page shows the cover, console, type (port, recomp, decomp), author, version, date, release notes and the GitHub link.
-- **Alerts in the phone's notifications** when a new port or version comes out. On Free they arrive 24 hours later; on PRO, right away. You can turn them off in Account → Settings.
+- **Covers:** port covers show up in the app and are fetched automatically (and again after every scan). On the game page you can **change the cover** (suggestions, another search name or an image link) or go back to the automatic one.
+- **Free version:** you can use the catalog normally, for free: explore, search, filter, see each game's page, favorites and alerts (24 hours later). PRO unlocks instant alerts, download and install in the app, changing covers and the accent color.
+- **Alerts in the phone's notifications** when a new port or version comes out. On Free they arrive 24 hours later; on PRO, right away.
 - **PRO with the same key as your PC:** sign in with the e-mail used to buy (Google, Hotmail or Outlook) and paste the key. The phone takes one slot of the key, just like a PC. To free the slot, use "Remove the license from this phone".
 - **PRO: download and install in the app.** The APK downloads with a progress bar and installs with one tap on Install. The first time, Android asks you to allow "install unknown apps" for PortFlix: allow it, come back and the install continues by itself. On Free, Download opens the download page in the browser.
 - **Downloads:** a list of the APKs you downloaded, with Install and Delete.
-- **Chat support** inside the app, in the same inbox as the website and the PC app. The answer shows up in the app and arrives as an alert. There are also shortcuts to the website, WhatsApp, Discord (under construction) and GitHub.
-- **Updates of the app itself:** when a new PortFlix version is out, a notice shows up in Explore and Account, and the app downloads and opens the installer of the new version.
-- **Portuguese and English:** follows the phone's language, or pick one in Account → Settings.
-- The Android **Back** button closes the open screen; on the home screen it minimizes the app.
-- **Covers on Android:** port covers show up in the app and are fetched automatically (and again after every scan). On the game page you can **change the cover** (suggestions, another search name or an image link) or go back to the automatic one.
 - **Full settings:** theme (automatic, dark, light), accent color and grid columns (PRO), language, alerts by kind, automatic catalog scan, covers, creators I follow, my projects, hidden projects, **sync with the PC** (favorites, hidden, creators and projects), downloads folder, AI assistant, profile, updates and help.
-- **PortFlix DEV for Android** (**PortFlix-DEV-1.5.2-Android.apk**, installs next to the regular app): support inbox (website, PC and Android chats with direct reply), license generator and list (create, renew, revoke, free a device, copy message, WhatsApp) and the same catalog as the app.
+- **Updates of the app itself:** when a new PortFlix version is out, a notice shows up in Explore and Account, and the app downloads and opens the installer of the new version.
+- **Portuguese and English:** follows the phone's language, or pick one in Settings.
+- The Android **Back** button closes the open screen; on the home screen it minimizes the app.
+- **PortFlix DEV for Android** (installs next to the regular app, creator only): Support inbox (website, PC and Android chats, with direct reply), license generator and list (create, renew, revoke, free a device, copy message, WhatsApp) and the same catalog as the app.
 - Reminder: ports need the files of **your** original game. PortFlix doesn't include or download games. Automatic covers may not match the game.
+
+#### 💬 Support (PC, Linux, Android and website)
+- **Emojis in the chat:** a 😊 button next to the message box, with sections (faces, gestures, hearts, games, objects and animated). A message with only 1 to 3 emojis shows big and **animated**. Works in the customer app, in PortFlix DEV → Support, on the website and on Android.
+- **On Android, the conversation refreshes by itself** within seconds and when you come back to the app, with no need to close and reopen it. The DEV conversation list too.
+- Conversations opened from the Android app show up in PortFlix DEV → Support with the **ANDROID** label, and the Telegram alert says it came from Android.
 
 #### 🌐 Website
 - New background at the top: a perspective wall of port covers, a sweeping radar and port alerts showing up live on the sides, showing what the app does.
 - Stronger, easier-to-read top text, naming God of War III, Bloodborne and Uncharted (PS4 ports), Zelda, Mario, Sonic and Mortal Kombat.
-- Its own highlight for the new-port alert ("New port out? You'll know right away.").
+- A highlight of its own for the new-port alert ("New port out? You'll know right away.").
 - **Android** download on the website.
-
-#### 💬 Support
-- Conversations started from the Android app show up in PortFlix DEV → Support with an **ANDROID** label, and the Telegram alert says it came from Android.
-
-#### 🖥️ Windows and Linux
-- No feature changes in this version: the number goes up to 1.5.0 to match every system.
-- Release files now have the **version in their name** (e.g. PortFlix-1.5.0-Setup.exe, PortFlix-1.5.0-Linux-x86_64.tar.gz). Updating in the app understands the new names, and the website buttons always point to the newest version.
-- If you're on 1.4: this time use **Download from GitHub** (1.4's "Install update" looks for the old name).
 
 ### 1.4.0 (2026-10-20)
 
