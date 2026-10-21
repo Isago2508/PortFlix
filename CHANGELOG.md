@@ -17,7 +17,6 @@
 - **PRO com a mesma chave do PC:** entre com o mesmo e-mail da compra (Google, Hotmail ou Outlook) e cole a chave. O celular ocupa uma vaga da chave, igual a um PC. Para liberar a vaga, use "Remover a licença deste celular".
 - **PRO: baixar e instalar pelo app.** O APK baixa com barra de progresso e instala com um toque em Instalar. Na primeira vez o Android pede para liberar "instalar apps desconhecidos" para o PortFlix: libere, volte e a instalação continua sozinha. No Free, o Baixar abre a página do download no navegador.
 - **Downloads:** lista dos APKs baixados, com Instalar e Apagar.
-- **Instalação mais confiável:** o app agora pede ao instalador do Android de um jeito que ele reconhece o PortFlix como origem, então depois de liberar "instalar apps desconhecidos" a instalação segue direto.
 - **Configurações completas:** tema (automático, escuro, claro), cor de destaque e colunas da grade (PRO), idioma, avisos por tipo, varredura automática do catálogo, capas, criadores que sigo, meus projetos, projetos ocultos, **sincronizar com o PC** (favoritos, ocultos, criadores e projetos), pasta de downloads, assistente de IA, perfil, atualizações e ajuda.
 - **Atualização do próprio app:** quando sai versão nova do PortFlix, aparece um aviso no Explorar e em Conta, e o app baixa e abre a instalação da versão nova.
 - **Português e inglês:** segue o idioma do celular, ou escolha nas Configurações.
@@ -27,8 +26,19 @@
 
 #### 💬 Atendimento (PC, Linux, Android e site)
 - **Emojis no chat:** botão 😊 ao lado do campo de mensagem, com seções (rostos, gestos, corações, games, objetos e animados). Mensagem só com 1 a 3 emojis aparece grande e **animada**. Vale para o app do cliente, para o PortFlix DEV → Atendimento, para o site e para o Android.
-- **No Android, a conversa atualiza sozinha** em poucos segundos e ao voltar para o app, sem precisar fechar e abrir a conversa. A lista de conversas do DEV também.
+- **No Android, a conversa atualiza sozinha** em poucos segundos e ao voltar para o app. A lista de conversas do DEV também.
 - As conversas abertas pelo app do Android aparecem no PortFlix DEV → Atendimento com a etiqueta **ANDROID**, e o aviso no Telegram diz que veio do Android.
+
+#### 🖥️ Windows e Linux (versão 1.5.1)
+- **Novo:** emojis no chat de atendimento, com seções e emojis animados (veja Atendimento abaixo).
+- **Melhorado:** a atualização pelo app agora considera só as versões que existem para o seu sistema, sem oferecer uma versão que não é para ele.
+
+#### 📱 Android (versão 1.5.3): correções e melhorias
+- **Corrigido:** a instalação de APK pelo app. Depois de liberar "instalar apps desconhecidos", o Android voltava para a tela de liberação e não instalava. Agora a instalação segue direto.
+- **Corrigido:** no PortFlix DEV, abrir uma conversa em Atendimento dava erro e não mostrava as mensagens.
+- **Corrigido:** a atualização do próprio app não aparecia quando saía versão nova. Agora o app confere certo e oferece a atualização.
+- **Corrigido:** as mensagens novas do Atendimento demoravam muito ou só apareciam ao fechar e abrir a conversa. Agora chegam sozinhas em poucos segundos.
+- **Melhorado:** emojis no chat (seletor e animados), como no PC.
 
 #### 🌐 Site
 - Fundo novo no topo: parede de capas de ports em perspectiva, radar girando e avisos de ports aparecendo ao vivo nas laterais, mostrando o que o app faz.
@@ -187,7 +197,6 @@
 - **PRO with the same key as your PC:** sign in with the e-mail used to buy (Google, Hotmail or Outlook) and paste the key. The phone takes one slot of the key, just like a PC. To free the slot, use "Remove the license from this phone".
 - **PRO: download and install in the app.** The APK downloads with a progress bar and installs with one tap on Install. The first time, Android asks you to allow "install unknown apps" for PortFlix: allow it, come back and the install continues by itself. On Free, Download opens the download page in the browser.
 - **Downloads:** a list of the APKs you downloaded, with Install and Delete.
-- **More reliable install:** the app now asks the Android installer in a way that recognizes PortFlix as the source, so after you allow "install unknown apps" the install goes straight through.
 - **Full settings:** theme (automatic, dark, light), accent color and grid columns (PRO), language, alerts by kind, automatic catalog scan, covers, creators I follow, my projects, hidden projects, **sync with the PC** (favorites, hidden, creators and projects), downloads folder, AI assistant, profile, updates and help.
 - **Updates of the app itself:** when a new PortFlix version is out, a notice shows up in Explore and Account, and the app downloads and opens the installer of the new version.
 - **Portuguese and English:** follows the phone's language, or pick one in Settings.
@@ -199,6 +208,17 @@
 - **Emojis in the chat:** a 😊 button next to the message box, with sections (faces, gestures, hearts, games, objects and animated). A message with only 1 to 3 emojis shows big and **animated**. Works in the customer app, in PortFlix DEV → Support, on the website and on Android.
 - **On Android, the conversation refreshes by itself** within seconds and when you come back to the app, with no need to close and reopen it. The DEV conversation list too.
 - Conversations opened from the Android app show up in PortFlix DEV → Support with the **ANDROID** label, and the Telegram alert says it came from Android.
+
+#### 🖥️ Windows and Linux (version 1.5.1)
+- **New:** emojis in the support chat, with sections and animated emojis (see Support below).
+- **Improved:** updating from the app now only considers the versions that exist for your system, and doesn't offer a version that isn't for it.
+
+#### 📱 Android (version 1.5.3): fixes and improvements
+- **Fixed:** installing an APK from the app. After allowing "install unknown apps", Android sent you back to the permission screen and didn't install. Now the install goes straight through.
+- **Fixed:** in PortFlix DEV, opening a conversation in Support showed an error and no messages.
+- **Fixed:** the app's own update didn't show up when a new version came out. Now the app checks correctly and offers the update.
+- **Fixed:** new Support messages took very long or only showed after closing and reopening the conversation. Now they arrive by themselves within seconds.
+- **Improved:** emojis in the chat (picker and animated), as on PC.
 
 #### 🌐 Website
 - New background at the top: a perspective wall of port covers, a sweeping radar and port alerts showing up live on the sides, showing what the app does.
