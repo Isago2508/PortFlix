@@ -17,6 +17,7 @@
 - **PRO com a mesma chave do PC:** entre com o mesmo e-mail da compra (Google, Hotmail ou Outlook) e cole a chave. O celular ocupa uma vaga da chave, igual a um PC. Para liberar a vaga, use "Remover a licença deste celular".
 - **PRO: baixar e instalar pelo app.** O APK baixa com barra de progresso e instala com um toque em Instalar. Na primeira vez o Android pede para liberar "instalar apps desconhecidos" para o PortFlix: libere, volte e a instalação continua sozinha. No Free, o Baixar abre a página do download no navegador.
 - **Downloads:** lista dos APKs baixados, com Instalar e Apagar.
+- **Instalação mais confiável:** o app agora pede ao instalador do Android de um jeito que ele reconhece o PortFlix como origem, então depois de liberar "instalar apps desconhecidos" a instalação segue direto.
 - **Configurações completas:** tema (automático, escuro, claro), cor de destaque e colunas da grade (PRO), idioma, avisos por tipo, varredura automática do catálogo, capas, criadores que sigo, meus projetos, projetos ocultos, **sincronizar com o PC** (favoritos, ocultos, criadores e projetos), pasta de downloads, assistente de IA, perfil, atualizações e ajuda.
 - **Atualização do próprio app:** quando sai versão nova do PortFlix, aparece um aviso no Explorar e em Conta, e o app baixa e abre a instalação da versão nova.
 - **Português e inglês:** segue o idioma do celular, ou escolha nas Configurações.
@@ -186,6 +187,7 @@
 - **PRO with the same key as your PC:** sign in with the e-mail used to buy (Google, Hotmail or Outlook) and paste the key. The phone takes one slot of the key, just like a PC. To free the slot, use "Remove the license from this phone".
 - **PRO: download and install in the app.** The APK downloads with a progress bar and installs with one tap on Install. The first time, Android asks you to allow "install unknown apps" for PortFlix: allow it, come back and the install continues by itself. On Free, Download opens the download page in the browser.
 - **Downloads:** a list of the APKs you downloaded, with Install and Delete.
+- **More reliable install:** the app now asks the Android installer in a way that recognizes PortFlix as the source, so after you allow "install unknown apps" the install goes straight through.
 - **Full settings:** theme (automatic, dark, light), accent color and grid columns (PRO), language, alerts by kind, automatic catalog scan, covers, creators I follow, my projects, hidden projects, **sync with the PC** (favorites, hidden, creators and projects), downloads folder, AI assistant, profile, updates and help.
 - **Updates of the app itself:** when a new PortFlix version is out, a notice shows up in Explore and Account, and the app downloads and opens the installer of the new version.
 - **Portuguese and English:** follows the phone's language, or pick one in Settings.
