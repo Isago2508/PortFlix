@@ -106,7 +106,6 @@ window.PFEmoji = (function () {
       <form class="pfchat-form">
         <div class="pfchat-who"><input class="pfchat-name" maxlength="80" autocomplete="name"><input class="pfchat-email" type="email" maxlength="160" autocomplete="email"></div>
         <div class="pfchat-row"><textarea class="pfchat-text" rows="2" maxlength="2000" required></textarea><button class="btn pri sm pfchat-send" type="submit"></button></div>
-        <a class="pfchat-wa" href="https://wa.me/5548988516188" target="_blank" rel="noopener"></a>
       </form>
     </div>`;
   document.body.append(box);
@@ -115,7 +114,7 @@ window.PFEmoji = (function () {
   function labels() {
     $(".pfchat-lbl").textContent = t("open"); $(".pfchat-title").textContent = t("title"); $(".pfchat-sub").textContent = t("sub");
     $(".pfchat-name").placeholder = t("name"); $(".pfchat-email").placeholder = t("email"); $(".pfchat-text").placeholder = t("msg");
-    $(".pfchat-send").textContent = t("send"); $(".pfchat-wa").textContent = t("wa") + " (48) 98851-6188";
+    $(".pfchat-send").textContent = t("send");
     $(".pfchat-name").value = $(".pfchat-name").value || st.get("name"); $(".pfchat-email").value = $(".pfchat-email").value || st.get("email");
     $(".pfchat-who").hidden = !!(st.get("id") && st.get("name"));
     $(".pfchat-new").textContent = t("newc"); $(".pfchat-new").hidden = !st.get("id");

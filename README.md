@@ -61,7 +61,7 @@ O PortFlix é um catálogo que se atualiza sozinho com os projetos da comunidade
 | Cores de tema: vermelho, rosa, roxo, azul e neon | – | ✅ |
 | Projetos próprios, seguir criadores e conectar o GitHub | – | ✅ |
 
-**PRO vitalício:** 1 PC por **R$ 30** ou 2 PCs por **R$ 50**, pagamento único. Compre no [site](https://isago2508.github.io/PortFlix/#precos) (Mercado Pago ou Pix pelo WhatsApp).
+**PRO vitalício:** 1 PC por **R$ 30** ou 2 PCs por **R$ 50**, pagamento único. Compre no [site](https://isago2508.github.io/PortFlix/#precos) (Mercado Pago).
 
 ¹ As capas automáticas são buscadas pelo nome do jogo e **nem sempre vão bater com o jogo certo**. No PRO você troca qualquer capa do jeito que quiser: uma sugestão, um link de imagem ou um arquivo do seu PC.
 
@@ -181,7 +181,6 @@ Ele não acessa os seus e-mails, arquivos nem contatos. Política completa: http
 ### Suporte
 
 - **Discord:** [comunidade do PortFlix](https://discord.gg/XusPwTQ6X) (ainda em construção)
-- **WhatsApp:** [(48) 98851-6188](https://wa.me/5548988516188)
 - **E-mail:** hugofernandes30@gmail.com
 - **Problemas e sugestões:** use a aba [Issues](https://github.com/Isago2508/PortFlix/issues)
 
@@ -221,7 +220,7 @@ PortFlix is a self-updating catalog of the community projects that bring console
 | Theme colors: red, pink, purple, blue and neon | – | ✅ |
 | Your own projects, follow creators and connect GitHub | – | ✅ |
 
-**PRO for life:** 1 PC for **R$ 30** or 2 PCs for **R$ 50** (Brazilian reais), one-time payment. Buy it on the [website](https://isago2508.github.io/PortFlix/?lang=en#pricing) (Mercado Pago) or [message us on WhatsApp](https://wa.me/5548988516188) to pay another way.
+**PRO for life:** 1 PC for **R$ 30** or 2 PCs for **R$ 50** (Brazilian reais), one-time payment. Buy it on the [website](https://isago2508.github.io/PortFlix/?lang=en#pricing) (Mercado Pago).
 
 ¹ Automatic covers are found by the game's name and **won't always match the right game**. With PRO you can swap any cover however you like: a suggestion, an image link or a file from your PC.
 
@@ -337,7 +336,6 @@ It never accesses your e-mails, files or contacts. Full policy (Portuguese): htt
 ### Support
 
 - **Discord:** [PortFlix community](https://discord.gg/XusPwTQ6X) (still a work in progress)
-- **WhatsApp:** [+55 48 98851-6188](https://wa.me/5548988516188)
 - **E-mail:** hugofernandes30@gmail.com
 - **Bugs and suggestions:** [Issues](https://github.com/Isago2508/PortFlix/issues)
 
